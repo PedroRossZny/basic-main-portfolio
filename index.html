@@ -868,7 +868,7 @@
                                 <div class="tech-category">
                                     <h5>Frontend</h5>
                                     <ul>
-                                        <li>HTML5 Semântico</li>
+                                        <li>HTML5</li>
                                         <li>CSS3</li>
                                     </ul>
                                 </div>
@@ -1112,9 +1112,30 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto de prática em Python focado na criação de funções, separação de responsabilidades e manipulação de listas.</p>
-                            <p>Inclui geração de números aleatórios com random, além de lógica condicional para iterar e somar apenas valores pares de uma lista.</p>
-                            <p>Também explora personalização da saída no terminal utilizando códigos de cor ANSI para melhorar a visualização dos resultados.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Sorteador Numérico</strong> é um script focado no conceito de modularização e manipulação de arrays. Ele demonstra a criação de funções isoladas com responsabilidades únicas: uma para gerar e armazenar valores pseudo-aleatórios e outra para iterar sobre a lista, filtrando e somando apenas os números pares.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/Functions" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container">
+                                <button id="btn-sortear" class="btn-interativo">Sortear 5 Números</button>
+                                <p id="res-sorteio" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
 
@@ -1136,9 +1157,32 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto em Python voltado ao gerenciamento de dados de jogadores de futebol através de interação via terminal.</p>
-                            <p>Utiliza listas e dicionários combinados para estruturar os perfis dos atletas, registrando partidas e desempenho em gols.</p>
-                            <p>Inclui levantamento dinâmico de dados com enumerate() e um sistema de consulta iterativa com while, permitindo analisar o desempenho individual por partida.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Gestão de Jogadores</strong> é uma aplicação de terminal construída para lidar com estruturas de dados compostas. O script utiliza listas e dicionários combinados para registrar dinamicamente o perfil de atletas, contabilizando as partidas jogadas e o desempenho em gols.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/Use-of-Football-Players" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container flex-column">
+                                <input type="text" id="jog-nome" placeholder="Nome do Jogador" class="input-demo">
+                                <input type="text" id="jog-gols" placeholder="Gols (ex: 1, 0, 2)" class="input-demo">
+                                <button id="btn-jogadores" class="btn-interativo">Gerar Relatório</button>
+                                <p id="res-jogadores" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
 
@@ -1160,9 +1204,37 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto em Python que simula o jogo de Par ou Ímpar contra o computador, executado diretamente no terminal.</p>
-                            <p>O algoritmo utiliza estruturas condicionais e um loop contínuo, encerrando apenas quando o jogador perde, permitindo acumular vitórias consecutivas.</p>
-                            <p>Também integra time.sleep() para criar suspense nas jogadas e usa random e o operador % para calcular o resultado em tempo real.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Game: Par ou Ímpar</strong> simula o clássico jogo através de um loop contínuo (<code>while True</code>) que só é interrompido quando o jogador perde. O algoritmo desafia a máquina, utilizando operações aritméticas de módulo (<code>%</code>) para definir o resultado das rodadas em tempo real.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/Even-or-Odd" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container flex-column">
+                                <div class="flex-row">
+                                    <select id="poi-escolha" class="input-demo">
+                                        <option value="P">Par</option>
+                                        <option value="I">Ímpar</option>
+                                    </select>
+                                    <input type="number" id="poi-num" placeholder="Nº 0-10" class="input-demo">
+                                </div>
+                                <button id="btn-poi" class="btn-interativo">Jogar</button>
+                                <p id="res-poi" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
                     
@@ -1184,8 +1256,31 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto clássico de lógica de programação que determina a combinação ideal de notas para um valor de saque.</p>
-                            <p>O algoritmo prioriza sempre as maiores cédulas disponíveis (R$50, R$20, R$10 e R$1), utilizando divisão inteira // para contar as notas e o operador % para calcular o valor restante durante o processo.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Sistema de ATM</strong> é uma resolução clássica de problemas de matemática discreta. O algoritmo calcula de forma gulosa (Greedy Algorithm) a menor quantidade de notas necessárias para compor um valor de saque, priorizando sempre as cédulas de maior valor disponíveis.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/ATM-Simulator" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container flex-column">
+                                <input type="number" id="atm-valor" placeholder="Valor (R$)" class="input-demo">
+                                <button id="btn-atm" class="btn-interativo">Calcular Saque</button>
+                                <p id="res-atm" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
 
@@ -1207,8 +1302,31 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto simples focado em lógica condicional para avaliar velocidades informadas pelo usuário via terminal.</p>
-                            <p>Utiliza input() para captura de dados, estrutura if/else para verificar o limite de 80 km/h e f-strings com :.2f para formatar valores monetários na saída.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Cálculo de Multas</strong> é uma aplicação de estrutura condicional direta que simula a lógica de um radar de trânsito. O sistema avalia a velocidade registrada e, em caso de infração, gera automaticamente o valor financeiro da multa baseando-se em uma fórmula de acréscimo proporcional.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/Speeding-Fine-Calculation-Python" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container flex-column">
+                                <input type="number" id="multa-vel" placeholder="Velocidade (km/h)" class="input-demo">
+                                <button id="btn-multa" class="btn-interativo">Verificar Radar</button>
+                                <p id="res-multa" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
 
@@ -1230,8 +1348,31 @@
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <p>Projeto simples de lógica que compara o palpite do jogador com um número gerado aleatoriamente.</p>
-                            <p>Utiliza randint(0, 5) da biblioteca random para gerar o número e códigos ANSI (\033[m) para exibir mensagens coloridas de acerto ou erro no terminal.</p>
+                            <h4>Sobre o projeto</h4>
+                            <p>O <strong>Jogo de Adivinhação</strong> é uma interação via console que utiliza a biblioteca nativa para geração de números aleatórios. O script oculta o número escolhido pela máquina e valida o palpite do usuário, entregando feedback imediato (Win/Loss condition).</p>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/Guessing-Game-Python" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                            </div>
+
+                            <h4>Tecnologias utilizadas</h4>
+
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Linguagem</h5>
+                                    <ul>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <hr class="divisor-interativo">
+                            <h4>Teste na Prática</h4>
+                            <div class="demo-container flex-column">
+                                <input type="number" id="adv-num" placeholder="Palpite (0 a 5)" class="input-demo">
+                                <button id="btn-adv" class="btn-interativo">Tentar</button>
+                                <p id="res-adv" class="resultado-logica"></p>
+                            </div>
                         </div>
                     </div>
                 </div>

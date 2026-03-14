@@ -483,6 +483,51 @@ article h2 {
     margin-bottom: 4px;
 }
 
+/* Estilização da área interativa dos projetos */
+.divisor-interativo {
+    border: 1px solid var(--borda);
+    margin: 20px 0;
+}
+
+.demo-container {
+    background: var(--fundo-principal);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+}
+
+.demo-descricao {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.btn-interativo {
+    padding: 8px 15px;
+    cursor: pointer;
+    background: var(--destaque);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.btn-interativo:hover {
+    opacity: 0.9;
+}
+
+.resultado-logica {
+    margin-top: 10px;
+    font-family: monospace;
+    color: var(--texto);
+    line-height: 1.5;
+}
+
+.destaque-resultado {
+    color: var(--destaque);
+    font-weight: bold;
+}
+
 /* --- Rodapé Discreto --- */
 .rodape-discreto {
     text-align: center;
