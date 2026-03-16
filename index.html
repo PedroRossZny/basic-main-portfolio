@@ -9,7 +9,22 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
+    <!-- Fundo Interativo -->
+    <div id="fundo-interativo"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="glow-fundo"></div>
+        <div class="loader-elementos">
+            <div class="spinner-externo"></div>
+            <div class="spinner"></div>
+            <img src="images/pedro.jpg" alt="Carregando..." class="loader-foto">
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
     <header>
+        <!-- Menu de Navegação -->
         <nav id="menu">
             <ul>
                 <li><a href="#tecnologias" class="link"><i class="fa-solid fa-laptop-code"></i></a></li>
@@ -20,15 +35,19 @@
         </nav>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main class="animacao-surgir">
+
+        <!-- Ficha -->
         <section id="ficha">
+            <!-- Card da Ficha -->
             <article>
                 <img src="images/pedro.jpg" alt="Foto de Pedro Henrique Rodrigues Ross" class="perfil">
                 <h1>Pedro Henrique Rodrigues Ross</h1>
                 <p>Desenvolvedor Full-Stack (Mobile & Web), com foco em Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL e desenvolvimento de REST APIs. Atualmente atuo como freelancer, criando projetos web e mobile sob medida.</p>
-                
+                <!-- Links das Redes Sociais -->
                 <div class="social">
-                    <a href="mailto:pedrohenriquerodriguesross@gmail.com" target="_blank" rel="nofollow"><i class="fa-solid fa-at"></i></a>
+                    <a href="mailto:pedrohenriquerodriguesross@gmail.com" target="_blank" rel="nofollow"><i class="fa-solid fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/pedro-ross" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/PedroRossZny" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/pedro.rzny/" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
@@ -36,11 +55,15 @@
             </article>
         </section>
 
+        <!-- Detalhes Pincipais -->
         <section id="detalhes">
+
+            <!-- Tecnologias -->
             <article id="tecnologias">
                 <h2><i class="fa-solid fa-laptop-code"></i> Tecnologias <span class="dica-filtro">(Clique em uma para filtrar os projetos)</span></h2>
-                
+                <!-- Grupo das Tecnologias -->
                 <div class="tech-container">
+                    <!-- Frontend -->
                     <div class="tech-group">
                         <h3>Frontend & Mobile</h3>
                         <div class="tech-botoes">
@@ -54,7 +77,7 @@
                             <div class="tech-btn" data-filter="tailwindcss"><i class="devicon-tailwindcss-original"></i> Tailwind CSS</div>
                         </div>
                     </div>
-
+                    <!-- Backend -->
                     <div class="tech-group">
                         <h3>Backend & Banco de Dados</h3>
                         <div class="tech-botoes">
@@ -67,7 +90,7 @@
                             <div class="tech-btn" data-filter="sequelize"><i class="devicon-sequelize-plain"></i> Sequelize</div>
                         </div>
                     </div>
-
+                    <!-- Ferramentas -->
                     <div class="tech-group">
                         <h3>Ferramentas & Extras</h3>
                         <div class="tech-botoes">
@@ -82,6 +105,7 @@
                 </div>
             </article>
 
+            <!-- Projetos -->
             <article id="projetos">
                 <h2>
                     <span class="titulo-projetos">
@@ -94,6 +118,7 @@
                     </button>
                 </h2>
 
+                <!-- LABORWAZE -->
                 <div id="projeto-container">
                     <div class="projeto" data-tech="">
                         <div class="projeto-controle">
@@ -266,6 +291,7 @@
                         </div>
                     </div>
 
+                    <!-- SPACEX -->
                     <div class="projeto" data-tech="reactnative expo javascript styledcomponents git github axios ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -370,6 +396,7 @@
                         </div>
                     </div>
 
+                    <!-- SOS AMBIENTE -->
                     <div class="projeto" data-tech="reactnative expo javascript git github ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -468,6 +495,7 @@
                         </div>
                     </div>
 
+                    <!-- SMOKE COFFEE -->
                     <div class="projeto" data-tech="reactnative expo javascript git github ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -560,6 +588,7 @@
                         </div>
                     </div>
 
+                    <!-- AVALIA AQUI -->
                     <div class="projeto" data-tech="html5 css3 javascript nodejs express sqlite sequelize git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -651,6 +680,7 @@
                         </div>
                     </div>
 
+                    <!-- PORTFOLIO -->
                     <div class="projeto" data-tech="html5 css3 javascript git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -710,6 +740,7 @@
                         </div>
                     </div>
 
+                    <!-- LOGIN -->
                     <div class="projeto" data-tech="html5 css3 git github recursosui">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -771,6 +802,7 @@
                         </div>
                     </div>
 
+                    <!-- REDES SOCIAIS -->
                     <div class="projeto" data-tech="html5 css3 git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -828,6 +860,7 @@
                         </div>
                     </div>
 
+                    <!-- CORDEL MODERNO -->
                     <div class="projeto" data-tech="html5 css3 git github recursosui">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -887,6 +920,7 @@
                         </div>
                     </div>
 
+                    <!-- ANDROID -->
                     <div class="projeto" data-tech="html5 css3 git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -945,6 +979,7 @@
                         </div>
                     </div>
 
+                    <!-- JAVASCRIPT -->
                     <div class="projeto" data-tech="javascript">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -996,6 +1031,7 @@
                         </div>
                     </div>
 
+                    <!-- PYTHON -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1045,6 +1081,7 @@
                         </div>
                     </div>
 
+                    <!-- HTML5 & CSS3 -->
                     <div class="projeto" data-tech="html5 css3">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1096,6 +1133,7 @@
                         </div>
                     </div>
 
+                    <!-- SORTEADOR -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1134,6 +1172,7 @@
                         </div>
                     </div>
 
+                    <!-- DESEMPENHO DE JOGADORES -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1172,6 +1211,7 @@
                         </div>
                     </div>
 
+                    <!-- PAR OU IMPAR -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1210,6 +1250,7 @@
                         </div>
                     </div>
                     
+                    <!-- ATM -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1248,6 +1289,7 @@
                         </div>
                     </div>
 
+                    <!-- CALCULO DE MULTAS -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1286,6 +1328,7 @@
                         </div>
                     </div>
 
+                    <!-- ADIVINHAÇÃO -->
                     <div class="projeto" data-tech="python">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -1326,6 +1369,7 @@
                 </div>
             </article>
 
+            <!-- Formação -->
             <article id="formacao">
                 <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
                 <div id="formacao-container">
@@ -1336,9 +1380,12 @@
                     </div>
                 </div>
             </article>
+            
         </section>
+
     </main>
 
+    <!-- Rodapé -->
     <footer class="rodape-discreto">
         <p>Desenvolvido por <a href="https://github.com/PedroRossZny" target="_blank" rel="nofollow">Pedro Ross</a> &copy; 2025</p>
     </footer>

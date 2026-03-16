@@ -6,18 +6,18 @@
 
 /* Novas variáveis mais modernas e equilibradas */
 :root {
-    --fundo-principal: #f3f4f6; /* Cinza bem claro */
-    --fundo-card: #ffffff;
+    --fundo-principal: #d8dbe2;
+    --fundo-card: #ebebf0;
     --texto: #1f2937;
     --texto-inverso: #ffffff;
     --texto-mutado: #6b7280;
-    --destaque: #2563eb; /* Azul profissional */
+    --destaque: #2563eb; 
     --destaque-hover: #1d4ed8;
-    --borda: #e5e7eb;
+    --borda: #a8acb4;
 }
 
 body.escuro {
-    --fundo-principal: #111827; /* Azul escuro profundo */
+    --fundo-principal: #111827;
     --fundo-card: #1f2937;
     --texto: #f9fafb;
     --texto-inverso: #111827;
@@ -32,8 +32,128 @@ body {
     line-height: 1.6em;
     background-color: var(--fundo-principal);
     color: var(--texto);
-    overflow: hidden; /* Mantém a trava para o scroll independente */
+    overflow: hidden;
     transition: background-color 0.4s, color 0.4s;
+}
+
+/* Loader Personalizado */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fundo-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    overflow: hidden;
+}
+
+#loader.oculto {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Fundo Animado (Glow Tech) */
+.glow-fundo {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--destaque) 0%, transparent 60%);
+    opacity: 0.15;
+    animation: pulsarGlow 2s infinite alternate ease-in-out;
+    z-index: 0;
+}
+
+@keyframes pulsarGlow {
+    0% { transform: scale(0.8); opacity: 0.1; }
+    100% { transform: scale(1.2); opacity: 0.25; }
+}
+
+/* Container para centralizar a foto e os anéis */
+.loader-elementos {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Foto Central Maior */
+.loader-foto {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 4;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border: 4px solid var(--fundo-card);
+}
+
+/* Spinner Original (Anel Interno) */
+.spinner {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 4px solid var(--borda);
+    border-top: 4px solid var(--destaque);
+    border-right: 4px solid var(--destaque);
+    border-radius: 50%;
+    animation: girarLoader 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    z-index: 3;
+}
+
+/* Novo Spinner (Anel Externo Tracejado) */
+.spinner-externo {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 2px dashed var(--texto-mutado);
+    border-radius: 50%;
+    animation: girarLoaderInverso 4s linear infinite;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+/* Animações de Rotação e Opacidade */
+@keyframes girarLoader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes girarLoaderInverso {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes piscarTexto {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Fundo Interativo com Máscara de Luz */
+#fundo-interativo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background-image: 
+        linear-gradient(to right, var(--borda) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--borda) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    mask-image: radial-gradient(circle 400px at var(--mouse-x, 50%) var(--mouse-y, 50%), black 0%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle 400px at var(--mouse-x, 50%) var(--mouse-y, 50%), black 0%, transparent 100%);
 }
 
 /* Animação de Surgimento */
@@ -91,7 +211,7 @@ main {
 
 section#ficha, section#detalhes {
     overflow-y: auto;
-    padding-right: 10px; /* Espaço para o scrollbar */
+    padding-right: 10px;
 }
 
 /* Estilização dos Cards base */
@@ -151,7 +271,7 @@ article h2 {
     padding-bottom: 10px;
 }
 
-/* --- Tecnologias (Grid em Colunas e Cards) --- */
+/* Tecnologias (Grid em Colunas e Cards) */
 .tech-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -209,7 +329,7 @@ article h2 {
     background-color: var(--fundo-card);
 }
 
-/* --- Formação --- */
+/* Formação */
 #formacao-container .curso {
     background-color: var(--fundo-principal);
     border-radius: 8px;
@@ -217,7 +337,7 @@ article h2 {
     padding: 15px 20px;
 }
 
-/* --- Projetos (3 Colunas) --- */
+/* Projetos (3 Colunas) */
 #filtro-ativo {
     font-size: 0.9rem;
     font-weight: normal;
@@ -227,7 +347,7 @@ article h2 {
 
 #projeto-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -238,7 +358,7 @@ article h2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
 .titulo-projetos{
@@ -352,9 +472,12 @@ article#projetos h2 {
 }
 
 .projeto-especificacoes {
-    display: none;
-    padding: 0 20px 20px 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 20px;
     color: var(--texto);
+    transition: max-height 0.6s ease, opacity 0.5s ease, padding 0.5s ease;
 }
 
 .projeto-especificacoes h4 {
@@ -377,9 +500,9 @@ article#projetos h2 {
     line-height: 1.5;
 }
 
-/* === Comportamento Expandido === */
+/* Comportamento Expandido */
 .projeto.expandido {
-    grid-column: 1 / -1; /* Ocupa as 3 colunas inteiras empurrando o resto */
+    grid-column: 1 / -1;
 }
 
 /* Esconde a imagem principal */
@@ -397,13 +520,14 @@ article#projetos h2 {
 
 /* Exibe o texto detalhado em baixo */
 .projeto.expandido .projeto-especificacoes {
-    display: block;
-    animation: fadeUp 0.6s ease;
+    max-height: 8000px;
+    opacity: 1;
+    padding: 10px 20px 20px 20px;
     border-top: 1px solid var(--borda);
-    padding-top: 20px;
+    margin-top: 10px;
 }
 
-/* --- Redes Sociais (Botões Simples) --- */
+/* Redes Sociais (Botões Simples) */
 .links {
     display: flex;
     gap: 12px;
@@ -458,7 +582,7 @@ article#projetos h2 {
     background: #723AD3;
 }
 
-/* --- Seção de Vídeos (Layout Flexível) --- */
+/* Seção de Vídeos (Layout Flexível) */
 
 .secao-video {
     margin-bottom: 20px;
@@ -478,7 +602,7 @@ article#projetos h2 {
     box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
 
-/* --- Download de Documentos (Layout Flexível) --- */
+/* Download de Documentos (Layout Flexível) */
 
 .download-doc {
     display: flex;
@@ -518,7 +642,7 @@ article#projetos h2 {
     transform: translateY(-2px);
 }
 
-/* --- Tecnologias (Layout em Grid) --- */
+/* Tecnologias (Layout em Grid) */
 
 .tech-grid{
     display: grid;
@@ -597,7 +721,7 @@ article#projetos h2 {
     font-weight: bold;
 }
 
-/* --- Rodapé Discreto --- */
+/* Rodapé Discreto */
 .rodape-discreto {
     display: flex;
     justify-content: center;
@@ -638,9 +762,9 @@ article#projetos h2 {
     background: var(--texto-mutado);
 }
 
-/* --- Lógica visual do Filtro --- */
+/* Lógica visual do Filtro */
 .tech-btn {
-    cursor: pointer; /* Transforma o mouse em 'mãozinha' nos botões */
+    cursor: pointer;
 }
 
 /* Quando o botão está selecionado */
@@ -655,4 +779,72 @@ article#projetos h2 {
 /* Esconde projetos que não tem a tecnologia filtrada */
 .projeto.oculto {
     display: none !important;
+}
+
+/* Responsividade 1050px */
+@media (max-width: 1050px) {
+    /* Libera a rolagem do corpo da página (scroll normal de celular) */
+    body {
+        overflow-y: auto;
+    }
+
+    /* Centraliza as opções do menu no cabeçalho */
+    header {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav#menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Coloca a Ficha e os Detalhes um embaixo do outro */
+    main {
+        grid-template-columns: 1fr; 
+        height: auto; 
+        gap: 15px; 
+    }
+
+    /* Desativa a rolagem interna das seções e permite que cresçam naturalmente */
+    section#ficha, section#detalhes {
+        overflow-y: visible;
+        padding-right: 0;
+    }
+
+    /* Ajusta o card da Ficha para não ficar tão "esticado" horizontalmente */
+    section#ficha > article {
+        text-align: center; /* Centraliza os textos da sua ficha */
+        margin-bottom: 0;
+    }
+
+    /* Ajusta o botão de download para não ficar quebrado caso a tela seja muito estreita */
+    .download-doc {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Responsividade 768px */
+@media (max-width: 768px) {
+
+    /* Icone do projeto desaparece */
+    .projeto.expandido .icone-projeto {
+        display: none;
+    }
+
+    /* Correção do Vídeo do YouTube (Painel de Chamadas e Avalia Aqui) */
+    /* Remove o float:right e a largura fixa de 420px para não quebrar a tela do celular */
+    .video-container {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .video-container iframe {
+        height: 220px;
+    }
+    
 }
