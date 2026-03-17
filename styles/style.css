@@ -834,7 +834,6 @@ article#projetos h2 {
         display: none;
     }
 
-    /* Correção do Vídeo do YouTube (Painel de Chamadas e Avalia Aqui) */
     /* Remove o float:right e a largura fixa de 420px para não quebrar a tela do celular */
     .video-container {
         float: none;

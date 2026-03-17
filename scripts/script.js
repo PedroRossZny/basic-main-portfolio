@@ -1,11 +1,10 @@
-// 1. CHECAGEM DE TEMA IMEDIATA (Para o Loader nascer certo)
-// Certifique-se de que a lógica do seu botão de tema salva no localStorage algo como localStorage.setItem('tema', 'escuro')
+// CHECAGEM DE TEMA IMEDIATA (Para o Loader nascer certo)
 const temaSalvo = localStorage.getItem('tema');
 if (temaSalvo === 'escuro') {
     document.body.classList.add('escuro');
 }
 
-// 2. LÓGICA DO LOADER (BLINDADA)
+// LÓGICA DO LOADER (BLINDADA)
 function esconderLoader() {
     const loader = document.getElementById('loader');
     if (loader && !loader.classList.contains('oculto')) {
@@ -23,7 +22,7 @@ window.addEventListener('load', esconderLoader);
 // Fallback de Segurança: Se algo travar, força a retirada do loader em 4 segundos
 setTimeout(esconderLoader, 4000);
 
-// 3. LÓGICA DO FUNDO INTERATIVO (Acompanha o Mouse)
+// LÓGICA DO FUNDO INTERATIVO (Acompanha o Mouse)
 const fundoInterativo = document.getElementById('fundo-interativo');
 
 window.addEventListener('mousemove', (e) => {
@@ -67,18 +66,42 @@ const navLinks = document.querySelectorAll('#menu ul a.link');
 
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-        if(this.id === 'botao-tema') return; 
-        e.preventDefault();
+        // Ignora cliques nos botões de tema e idioma para eles não tentarem fazer scroll
+        if(this.id === 'botao-tema' || this.id === 'botao-lingua') return;
 
         const targetId = this.getAttribute('href');
-        const detalhesSection = document.getElementById('detalhes');
-        const targetElement = document.querySelector(targetId);
+        
+        // Só tenta fazer scroll se o href começar com # e não for vazio
+        if (targetId && targetId.startsWith('#') && targetId !== '#') {
+            e.preventDefault();
+            
+            const targetElement = document.querySelector(targetId);
+            const detalhesSection = document.getElementById('detalhes');
 
-        if (targetElement && detalhesSection) {
-            detalhesSection.scrollTo({
-                top: targetElement.offsetTop - 20,
-                behavior: 'smooth'
-            });
+            if (targetElement) {
+                // DECISÃO DE RESPONSIVIDADE:
+                if (window.innerWidth <= 1050) {
+                    // MOBILE: A página inteira (window) faz o scroll
+                    const header = document.querySelector('header');
+                    const headerHeight = header ? header.offsetHeight : 0; // Altura do menu
+                    
+                    // Calcula a posição real do elemento na página inteira
+                    const posicaoElemento = targetElement.getBoundingClientRect().top + window.scrollY;
+                    
+                    window.scrollTo({
+                        top: posicaoElemento - headerHeight - 15, // Desconta o cabeçalho
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // DESKTOP: Apenas a área de detalhes faz o scroll
+                    if (detalhesSection) {
+                        detalhesSection.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }
         }
     });
 });
@@ -95,7 +118,7 @@ botoesExpandir.forEach(botao => {
         const icone = this.querySelector('i');
         const vaiExpandir = !projeto.classList.contains('expandido');
 
-        // 1. Animação de "preparação" (o card dá uma leve encolhida e fica transparente antes de se mover)
+        // Animação de "preparação" (o card dá uma leve encolhida e fica transparente antes de se mover)
         projeto.style.opacity = '0.3';
         projeto.style.transform = 'scale(0.95)';
 
@@ -112,18 +135,18 @@ botoesExpandir.forEach(botao => {
                 projeto.style.order = '';
             }
 
-            // 2. Traz o card de volta ao estado normal no novo lugar
+            // Traz o card de volta ao estado normal no novo lugar
             projeto.style.opacity = '1';
             projeto.style.transform = 'scale(1)';
 
-            // 3. Scroll preciso para o TOPO do projeto
+            // Scroll preciso para o TOPO do projeto
             if (vaiExpandir) {
                 // Outro pequeno timeout de 50ms para garantir que o navegador já renderizou o novo tamanho do CSS
                 setTimeout(() => {
                     
                     if (window.innerWidth <= 1050) {
                         // Comportamento Mobile: O scroll pertence à janela inteira (window)
-                        const headerHeight = document.querySelector('header').offsetHeight; // Pega a altura do seu cabeçalho fixo
+                        const headerHeight = document.querySelector('header').offsetHeight;
                         const posicaoProjeto = projeto.getBoundingClientRect().top + window.scrollY;
                         
                         window.scrollTo({
@@ -139,11 +162,11 @@ botoesExpandir.forEach(botao => {
                     }
                 }, 50); 
             }
-        }, 150); // Esse é o tempo da transição de opacidade/escala
+        }, 150);
     });
 });
 
-// --- Lógica de Filtro de Tecnologias ---
+// Lógica de Filtro de Tecnologias
 const techBtns = document.querySelectorAll('.tech-btn');
 const projetos = document.querySelectorAll('.projeto');
 const filtroAtivo = document.getElementById('filtro-ativo');
@@ -219,21 +242,23 @@ let idiomaAtual = localStorage.getItem('idioma') || 'pt';
 
 // Função que atualiza os textos na tela
 function aplicarTraducao(idioma) {
-    // RESOLVE O PROBLEMA DO NAVEGADOR PEDINDO TRADUÇÃO:
-    document.documentElement.lang = idioma === 'pt' ? 'pt-br' : 'en';
-
-    const elementosParaTraduzir = document.querySelectorAll('[data-i18n]');
-    
-    // Verificação de segurança para evitar que o script quebre se o translations.js falhar
-    if (typeof translations === 'undefined') {
-        console.error("Erro: O arquivo translations.js não foi carregado!");
-        return;
-    }
-
-    elementosParaTraduzir.forEach(elemento => {
+    document.documentElement.lang = (idioma === 'pt') ? 'pt-br' : 'en';
+    if (typeof translations === 'undefined') return;
+    // Traduz o texto interno (data-i18n)
+    const elementosTexto = document.querySelectorAll('[data-i18n]');
+    elementosTexto.forEach(elemento => {
         const chave = elemento.getAttribute('data-i18n');
-        if (translations[idioma] && translations[idioma][chave]) {
+        if (translations[idioma][chave]) {
             elemento.innerHTML = translations[idioma][chave];
+        }
+    });
+
+    // Traduz o atributo title (data-i18n-title)
+    const elementosTitle = document.querySelectorAll('[data-i18n-title]');
+    elementosTitle.forEach(elemento => {
+        const chave = elemento.getAttribute('data-i18n-title');
+        if (translations[idioma][chave]) {
+            elemento.setAttribute('title', translations[idioma][chave]);
         }
     });
 }

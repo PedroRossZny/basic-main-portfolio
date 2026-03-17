@@ -502,7 +502,9 @@ const translations = {
 
         "curso": "Bacharelado em Ciência da Computação",
         
-        "por": "Desenvolvido por "
+        "por": "Desenvolvido por ",
+
+        "limpar_filtro_tooltip": "Limpar Filtro"
     },
     en: {
         "perfil-descricao": "Full-Stack Developer (Mobile & Web), focused on Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL, and REST API development. Currently working as a freelancer, creating custom web and mobile projects.",
@@ -1007,6 +1009,8 @@ const translations = {
 
         "curso": "Bachelor's Degree in Computer Science",
 
-        "por": "Developed by "
+        "por": "Developed by ",
+
+        "limpar_filtro_tooltip": "Clear Filter"
     }
 };
