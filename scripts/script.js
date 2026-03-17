@@ -5,15 +5,23 @@ if (temaSalvo === 'escuro') {
     document.body.classList.add('escuro');
 }
 
-// 2. LÓGICA DO LOADER (Esconde após a página carregar)
-window.addEventListener('load', () => {
+// 2. LÓGICA DO LOADER (BLINDADA)
+function esconderLoader() {
     const loader = document.getElementById('loader');
-    
-    // Um timeout de 1.5s só para dar tempo do usuário apreciar a animação do seu rosto
-    setTimeout(() => {
-        loader.classList.add('oculto');
-    }, 1500); 
-});
+    if (loader && !loader.classList.contains('oculto')) {
+        // Mantive o seu tempo de 1.5s para apreciação da animação
+        setTimeout(() => {
+            loader.classList.add('oculto');
+        }, 1500);
+    }
+}
+
+// Tenta esconder quando o HTML básico carregar (mais rápido)
+document.addEventListener('DOMContentLoaded', esconderLoader);
+// Tenta esconder quando TUDO (imagens/iframes) carregar
+window.addEventListener('load', esconderLoader);
+// Fallback de Segurança: Se algo travar, força a retirada do loader em 4 segundos
+setTimeout(esconderLoader, 4000);
 
 // 3. LÓGICA DO FUNDO INTERATIVO (Acompanha o Mouse)
 const fundoInterativo = document.getElementById('fundo-interativo');
@@ -202,4 +210,44 @@ techBtns.forEach(btn => {
             }
         }
     });
+});
+
+const botaoLingua = document.getElementById('botao-lingua');
+
+// Define português como padrão se não houver nada salvo
+let idiomaAtual = localStorage.getItem('idioma') || 'pt';
+
+// Função que atualiza os textos na tela
+function aplicarTraducao(idioma) {
+    // RESOLVE O PROBLEMA DO NAVEGADOR PEDINDO TRADUÇÃO:
+    document.documentElement.lang = idioma === 'pt' ? 'pt-br' : 'en';
+
+    const elementosParaTraduzir = document.querySelectorAll('[data-i18n]');
+    
+    // Verificação de segurança para evitar que o script quebre se o translations.js falhar
+    if (typeof translations === 'undefined') {
+        console.error("Erro: O arquivo translations.js não foi carregado!");
+        return;
+    }
+
+    elementosParaTraduzir.forEach(elemento => {
+        const chave = elemento.getAttribute('data-i18n');
+        if (translations[idioma] && translations[idioma][chave]) {
+            elemento.innerHTML = translations[idioma][chave];
+        }
+    });
+}
+
+// Aplica a tradução logo que a página carrega
+aplicarTraducao(idiomaAtual);
+
+// Evento de clique no botão
+botaoLingua.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Alterna o idioma
+    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
+    // Salva a preferência do usuário
+    localStorage.setItem('idioma', idiomaAtual);
+    // Aplica a nova tradução
+    aplicarTraducao(idiomaAtual);
 });

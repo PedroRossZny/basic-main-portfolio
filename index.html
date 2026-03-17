@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Pedro Henrique Rodrigues Ross</title>
+    <title>Portfolio - Pedro Henrique Rodrigues Ross</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/73139c5dad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -30,6 +31,7 @@
                 <li><a href="#tecnologias" class="link"><i class="fa-solid fa-laptop-code"></i></a></li>
                 <li><a href="#projetos" class="link"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
                 <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#" class="link" id="botao-lingua"><i class="fa-solid fa-language"></i></a></li>
                 <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
@@ -44,7 +46,7 @@
             <article>
                 <img src="images/pedro.jpg" alt="Foto de Pedro Henrique Rodrigues Ross" class="perfil">
                 <h1>Pedro Henrique Rodrigues Ross</h1>
-                <p>Desenvolvedor Full-Stack (Mobile & Web), com foco em Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL e desenvolvimento de REST APIs. Atualmente atuo como freelancer, criando projetos web e mobile sob medida.</p>
+                <p data-i18n="perfil-descricao">Desenvolvedor Full-Stack (Mobile & Web), com foco em Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL e desenvolvimento de REST APIs. Atualmente atuo como freelancer, criando projetos web e mobile sob medida.</p>
                 <!-- Links das Redes Sociais -->
                 <div class="social">
                     <a href="mailto:pedrohenriquerodriguesross@gmail.com" target="_blank" rel="nofollow"><i class="fa-solid fa-envelope"></i></a>
@@ -60,7 +62,11 @@
 
             <!-- Tecnologias -->
             <article id="tecnologias">
-                <h2><i class="fa-solid fa-laptop-code"></i> Tecnologias <span class="dica-filtro">(Clique em uma para filtrar os projetos)</span></h2>
+                <h2>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span data-i18n="titulo-tecnologias">Tecnologias</span>
+                    <span class="dica-filtro" data-i18n="dica-filtro">(Clique em uma para filtrar os projetos)</span>
+                </h2>
                 <!-- Grupo das Tecnologias -->
                 <div class="tech-container">
                     <!-- Frontend -->
@@ -79,7 +85,7 @@
                     </div>
                     <!-- Backend -->
                     <div class="tech-group">
-                        <h3>Backend & Banco de Dados</h3>
+                        <h3 data-i18n="titulo-tech-group-backend">Backend & Banco de Dados</h3>
                         <div class="tech-botoes">
                             <div class="tech-btn" data-filter="nodejs"><i class="devicon-nodejs-plain"></i> Node.js</div>
                             <div class="tech-btn" data-filter="python"><i class="devicon-python-plain"></i> Python</div>
@@ -92,7 +98,7 @@
                     </div>
                     <!-- Ferramentas -->
                     <div class="tech-group">
-                        <h3>Ferramentas & Extras</h3>
+                        <h3 data-i18n="titulo-tech-group-ferramentas">Ferramentas & Extras</h3>
                         <div class="tech-botoes">
                             <div class="tech-btn" data-filter="git"><i class="devicon-git-plain"></i> Git</div>
                             <div class="tech-btn" data-filter="github"><i class="devicon-github-original"></i> GitHub</div>
@@ -109,7 +115,8 @@
             <article id="projetos">
                 <h2>
                     <span class="titulo-projetos">
-                        <i class="fa-solid fa-screwdriver-wrench"></i> Projetos
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <span data-i18n="titulo-projetos">Projetos</span>
                         <span id="filtro-ativo"></span>
                     </span>
 
@@ -132,22 +139,22 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/laborwaze-icon.png" alt="Icon LaborWaze" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Projeto LaborWaze</h3>
-                                <p class="resumo">Empresa focada no desenvolvimento de sistemas web e mobile personalizados e eficientes.</p>
+                                <h3 class="titulo" data-i18n="titulo-laborwaze">Projeto LaborWaze</h3>
+                                <p class="resumo" data-i18n="resumo-laborwaze">Empresa focada no desenvolvimento de sistemas web e mobile personalizados e eficientes.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre a LaborWaze</h4>
-                            <p>A <strong>LaborWaze</strong> é uma iniciativa voltada ao desenvolvimento de soluções digitais modernas, com foco na criação de sistemas web e aplicações mobile personalizadas. O projeto nasceu com a proposta de aplicar tecnologia de forma estratégica para ajudar empresas e profissionais a organizarem processos, modernizarem rotinas de trabalho e tornarem suas operações mais eficientes através de ferramentas digitais.</p>
-                            <p>Mais do que apenas criar sistemas, a LaborWaze busca desenvolver soluções bem estruturadas, pensadas para resolver problemas reais e gerar impacto positivo para quem utiliza essas tecnologias.</p>
+                            <h4 data-i18n="T1-laborwaze">Sobre a LaborWaze</h4>
+                            <p data-i18n="P1-laborwaze">A <strong>LaborWaze</strong> é uma iniciativa voltada ao desenvolvimento de soluções digitais modernas, com foco na criação de sistemas web e aplicações mobile personalizadas. O projeto nasceu com a proposta de aplicar tecnologia de forma estratégica para ajudar empresas e profissionais a organizarem processos, modernizarem rotinas de trabalho e tornarem suas operações mais eficientes através de ferramentas digitais.</p>
+                            <p data-i18n="P2-laborwaze">Mais do que apenas criar sistemas, a LaborWaze busca desenvolver soluções bem estruturadas, pensadas para resolver problemas reais e gerar impacto positivo para quem utiliza essas tecnologias.</p>
 
-                            <h4>Uma iniciativa que vai além do desenvolvimento</h4>
-                            <p>Embora o desenvolvimento de software seja o núcleo da iniciativa, a LaborWaze também se posiciona como um espaço de experimentação tecnológica e compartilhamento de conhecimento. A ideia é documentar projetos, explorar novas ideias e mostrar como sistemas são construídos na prática.</p>
-                            <p>Por isso, o projeto também mantém presença em plataformas de conteúdo onde são publicados vídeos, demonstrações de projetos, bastidores do desenvolvimento e conteúdos relacionados à área de programação e tecnologia.</p>
+                            <h4 data-i18n="T2-laborwaze">Uma iniciativa que vai além do desenvolvimento</h4>
+                            <p data-i18n="P3-laborwaze">Embora o desenvolvimento de software seja o núcleo da iniciativa, a LaborWaze também se posiciona como um espaço de experimentação tecnológica e compartilhamento de conhecimento. A ideia é documentar projetos, explorar novas ideias e mostrar como sistemas são construídos na prática.</p>
+                            <p data-i18n="P4-laborwaze">Por isso, o projeto também mantém presença em plataformas de conteúdo onde são publicados vídeos, demonstrações de projetos, bastidores do desenvolvimento e conteúdos relacionados à área de programação e tecnologia.</p>
 
-                            <h4>Presença nas redes</h4>
-                            <p>Os conteúdos produzidos pela LaborWaze são publicados em diferentes plataformas digitais, permitindo acompanhar o desenvolvimento dos projetos, conhecer novas ideias e explorar conceitos relacionados à criação de sistemas e aplicações.</p>
+                            <h4 data-i18n="T3-laborwaze">Presença nas redes</h4>
+                            <p data-i18n="P5-laborwaze">Os conteúdos produzidos pela LaborWaze são publicados em diferentes plataformas digitais, permitindo acompanhar o desenvolvimento dos projetos, conhecer novas ideias e explorar conceitos relacionados à criação de sistemas e aplicações.</p>
 
                             <div class="links">
                                 <a href="https://www.youtube.com/@LaborWaze" target="_blank" class="botao-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
@@ -155,8 +162,8 @@
                                 <a href="https://www.tiktok.com/@laborwazecorp" target="_blank" class="botao-link tiktok"><i class="fa-brands fa-tiktok"></i> TikTok</a>
                             </div>
 
-                            <h4>Contato</h4>
-                            <p>Para dúvidas, propostas ou qualquer tipo de contato relacionado aos projetos da iniciativa, é possível entrar em contato diretamente pelo e-mail abaixo:</p>
+                            <h4 data-i18n="T4-laborwaze">Contato</h4>
+                            <p data-i18n="P6-laborwaze">Para dúvidas, propostas ou qualquer tipo de contato relacionado aos projetos da iniciativa, é possível entrar em contato diretamente pelo e-mail abaixo:</p>
 
                             <div class="links">
                                 <a href="mailto:laborwaze@gmail.com" class="botao-link gmail"><i class="fa-solid fa-envelope"></i> Gmail</a>
@@ -164,6 +171,7 @@
                         </div>
                     </div>
 
+                    <!-- PAINEL CHAMADAS -->
                     <div class="projeto" data-tech="nextjs typescript tailwindcss nestjs postgresql git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
@@ -176,41 +184,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/painel-chamadas-icon.png" alt="Icon Painel Chamadas" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Painel de Chamadas</h3>
-                                <p class="resumo">Sistema full-stack desenvolvido para otimizar o fluxo de atendimento em hospitais.</p>
+                                <h3 class="titulo" data-i18n="titulo-painel">Painel de Chamadas</h3>
+                                <p class="resumo" data-i18n="resumo-painel">Sistema full-stack desenvolvido para otimizar o fluxo de atendimento em hospitais.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
+                            <h4 data-i18n="T1-painel">Sobre o projeto</h4>
                             <div class="secao-video">
                                 <div class="video-container">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/C7DnWuI7jQk?si=QTCqyZGk8PGquJ_d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
 
                                 <div class="texto-video">
-                                    <p>O <strong>Painel de Chamadas</strong> é um sistema desenvolvido para organizar e modernizar o fluxo de atendimento em hospitais, clínicas e unidades de saúde. A proposta do projeto é tornar o processo de chamadas de pacientes mais claro, eficiente e transparente tanto para os profissionais quanto para as pessoas que aguardam atendimento.</p>
-                                    <p>Através da interface do sistema, o profissional pode registrar e realizar
-                                    chamadas de forma simples, enviando as informações diretamente para
-                                    um painel digital de exibição em tempo real. O painel apresenta de forma
-                                    clara o nome do paciente, o setor ou sala de atendimento e o profissional
-                                    responsável pela chamada.</p>
-                                    <p>Para demonstrar o funcionamento do sistema na prática, foi produzido
-                                    um vídeo explicativo mostrando o fluxo completo de utilização da
-                                    plataforma. Esse vídeo está disponível no canal da LaborWaze e
-                                    apresenta o funcionamento do painel e da dinâmica de chamadas.</p>
+                                    <p data-i18n="P1-painel">O <strong>Painel de Chamadas</strong> é um sistema desenvolvido para organizar e modernizar o fluxo de atendimento em hospitais, clínicas e unidades de saúde. A proposta do projeto é tornar o processo de chamadas de pacientes mais claro, eficiente e transparente tanto para os profissionais quanto para as pessoas que aguardam atendimento.</p>
+                                    <p data-i18n="P2-painel">Através da interface do sistema, o profissional pode registrar e realizar chamadas de forma simples, enviando as informações diretamente para um painel digital de exibição em tempo real. O painel apresenta de forma clara o nome do paciente, o setor ou sala de atendimento e o profissional responsável pela chamada.</p>
+                                    <p data-i18n="P3-painel">Para demonstrar o funcionamento do sistema na prática, foi produzido um vídeo explicativo mostrando o fluxo completo de utilização da plataforma. Esse vídeo está disponível no canal da LaborWaze e apresenta o funcionamento do painel e da dinâmica de chamadas.</p>
                                 </div>
                             </div>
 
-                            <p>O sistema foi projetado para ser simples e eficiente para o profissional
-                            responsável pelo atendimento. Após realizar um cadastro inicial com
-                            seu nome, área de atuação e sala de atendimento, o usuário pode
-                            iniciar as chamadas diretamente pela interface do sistema.</p>
-                            <p>Ao inserir o nome do paciente e confirmar a chamada, as informações
-                            são enviadas imediatamente ao painel de exibição. O sistema também
-                            possui controle de múltiplas chamadas, permitindo realizar segunda
-                            e terceira tentativas com diferenciação visual no painel para garantir
-                            que o paciente perceba o chamado.</p>
+                            <p data-i18n="P4-painel">O sistema foi projetado para ser simples e eficiente para o profissional responsável pelo atendimento. Após realizar um cadastro inicial com seu nome, área de atuação e sala de atendimento, o usuário pode iniciar as chamadas diretamente pela interface do sistema.</p>
+                            <p data-i18n="P5-painel">Ao inserir o nome do paciente e confirmar a chamada, as informações são enviadas imediatamente ao painel de exibição. O sistema também possui controle de múltiplas chamadas, permitindo realizar segunda e terceira tentativas com diferenciação visual no painel para garantir que o paciente perceba o chamado.</p>
 
                             <div class="download-doc">
                                 <div class="download-icon">
@@ -218,43 +212,25 @@
                                 </div>
 
                                 <div class="download-text">
-                                    <p class="download-title">
+                                    <p class="download-title" data-i18n="download-painel">
                                         Download oficial do sistema
                                     </p>
-                                    <p>A documentação completa descreve o funcionamento do sistema,
-                                    estrutura das chamadas, painel de exibição e detalhes técnicos
-                                    do projeto.</p>
+                                    <p data-i18n="P6-painel">A documentação completa descreve o funcionamento do sistema, estrutura das chamadas, painel de exibição e detalhes técnicos do projeto.</p>
 
-                                    <a href="docs/documentacao-painel-chamadas.pdf" download class="download-button">Baixar Documentação (PDF)</a>
+                                    <a href="docs/documentacao-painel-chamadas.pdf" download class="download-button" data-i18n="baixar-documentacao-painel">Baixar Documentação (PDF)</a>
                                 </div>
                             </div>
 
-                            <h4>Fluxo e organização do atendimento</h4>
-                            <p>Todas as chamadas realizadas ficam registradas em um histórico
-                            completo, permitindo acompanhar o fluxo de atendimento ao longo
-                            do dia. Essas informações ajudam a entender a dinâmica do
-                            atendimento e permitem consultar registros anteriores quando
-                            necessário.</p>
-                            <p>O sistema também conta com mecanismos de controle para evitar
-                            múltiplos cliques acidentais e excesso de chamadas consecutivas,
-                            garantindo um ambiente mais organizado tanto no painel quanto
-                            na experiência dos pacientes que aguardam atendimento.</p>
+                            <h4 data-i18n="T2-painel">Fluxo e organização do atendimento</h4>
+                            <p data-i18n="P7-painel">Todas as chamadas realizadas ficam registradas em um histórico completo, permitindo acompanhar o fluxo de atendimento ao longo do dia. Essas informações ajudam a entender a dinâmica do atendimento e permitem consultar registros anteriores quando necessário.</p>
+                            <p  data-i18n="P8-painel">O sistema também conta com mecanismos de controle para evitar múltiplos cliques acidentais e excesso de chamadas consecutivas, garantindo um ambiente mais organizado tanto no painel quanto na experiência dos pacientes que aguardam atendimento.</p>
 
-                            <h4>Painel de exibição</h4>
-                            <p>O painel foi projetado para ser visualmente claro e facilmente
-                            interpretado em ambientes de sala de espera. O nome do paciente
-                            aparece em destaque, acompanhado das informações de
-                            encaminhamento e do profissional responsável pela chamada.</p>
-                            <p>Além da chamada ativa, o painel também mantém um histórico com
-                            os últimos atendimentos realizados e pode exibir mensagens
-                            informativas ou institucionais da unidade de saúde.</p>
+                            <h4 data-i18n="T3-painel">Painel de exibição</h4>
+                            <p data-i18n="P9-painel">O painel foi projetado para ser visualmente claro e facilmente interpretado em ambientes de sala de espera. O nome do paciente aparece em destaque acompanhado das informações de encaminhamento e do profissional responsável pela chamada.</p>
+                            <p data-i18n="P10-painel">Além da chamada ativa, o painel também mantém um histórico com os últimos atendimentos realizados e pode exibir mensagens informativas ou institucionais da unidade de saúde.</p>
 
-                            <h4>Tecnologias utilizadas</h4>
-                            <p>O Painel de Chamadas foi desenvolvido utilizando uma arquitetura
-                            full-stack moderna, voltada para desempenho, organização de código
-                            e facilidade de manutenção. O sistema combina tecnologias de
-                            frontend, backend, banco de dados e controle de versão para
-                            garantir estabilidade e escalabilidade.</p>
+                            <h4 data-i18n="T4-painel">Tecnologias utilizadas</h4>
+                            <p data-i18n="P11-painel">O Painel de Chamadas foi desenvolvido utilizando uma arquitetura full-stack moderna, voltada para desempenho, organização de código e facilidade de manutenção. O sistema combina tecnologias de frontend, backend, banco de dados e controle de versão para garantir estabilidade e escalabilidade.</p>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -274,14 +250,14 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Banco de Dados</h5>
+                                    <h5 data-i18n="banco-de-dados">Banco de Dados</h5>
                                     <ul>
                                         <li>PostgreSQL</li>
                                     </ul>
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -304,62 +280,44 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/space-icon.png" alt="Icon SpaceX" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">SpaceX Launch Explorer</h3>
-                                <p class="resumo">App mobile em React Native que exibe lançamentos da SpaceX e permite salvar favoritos.</p>
+                                <h3 class="titulo" data-i18n="titulo-spacex">SpaceX Launch Explorer</h3>
+                                <p class="resumo" data-i18n="resumo-spacex">App mobile em React Native que exibe lançamentos da SpaceX e permite salvar favoritos.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>SpaceX App</strong> é um aplicativo mobile desenvolvido para explorar
-                            dados públicos de lançamentos espaciais utilizando a API oficial da SpaceX.
-                            O objetivo do projeto foi construir uma aplicação completa em React Native,
-                            permitindo que o usuário navegue pelos lançamentos, visualize informações
-                            detalhadas das missões e organize seus lançamentos favoritos.</p>
-                            <p>O aplicativo consome dados da API v4 da SpaceX e apresenta uma lista
-                            de lançamentos ordenados do mais recente para o mais antigo. Cada item
-                            da lista permite acessar uma tela de detalhes contendo informações
-                            sobre a missão, o foguete utilizado e o local de lançamento.</p>
-                            <p>Além da visualização das missões, o sistema permite que cada usuário
-                            crie uma conta simples dentro do aplicativo e salve lançamentos
-                            como favoritos. Esses dados são armazenados localmente no dispositivo,
-                            garantindo uma experiência personalizada para cada usuário.</p>
-                            <p>Todo o código do projeto está disponível publicamente para consulta
-                            no repositório do GitHub.</p>
+                            <h4 data-i18n="T1-spacex">Sobre o projeto</h4>
+                            <p data-i18n="P1-spacex">O <strong>SpaceX App</strong> é um aplicativo mobile desenvolvido para explorar dados públicos de lançamentos espaciais utilizando a API oficial da SpaceX. O objetivo do projeto foi construir uma aplicação completa em React Native, permitindo que o usuário navegue pelos lançamentos, visualize informações detalhadas das missões e organize seus lançamentos favoritos.</p>
+                            <p data-i18n="P2-spacex">O aplicativo consome dados da API v4 da SpaceX e apresenta uma lista de lançamentos ordenados do mais recente para o mais antigo. Cada item da lista permite acessar uma tela de detalhes contendo informações sobre a missão, o foguete utilizado e o local de lançamento.</p>
+                            <p data-i18n="P3-spacex">Além da visualização das missões, o sistema permite que cada usuário crie uma conta simples dentro do aplicativo e salve lançamentos como favoritos. Esses dados são armazenados localmente no dispositivo, garantindo uma experiência personalizada para cada usuário.</p>
+                            <p data-i18n="P4-spacex">Todo o código do projeto está disponível publicamente para consulta no repositório do GitHub.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/SpaceX-app" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/SpaceX-app" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Funcionalidades principais</h4>
-                            <p>O aplicativo foi desenvolvido com foco em navegação simples e
-                            experiência fluida para o usuário. Entre as principais funcionalidades
-                            implementadas estão:</p>
+                            <h4 data-i18n="T2-spacex">Funcionalidades principais</h4>
+                            <p data-i18n="P5-spacex">O aplicativo foi desenvolvido com foco em navegação simples e experiência fluida para o usuário. Entre as principais funcionalidades implementadas estão:</p>
 
                             <ul>
-                                <li>Listagem completa de lançamentos da SpaceX</li>
-                                <li>Busca por nome da missão</li>
-                                <li>Visualização de detalhes do lançamento</li>
-                                <li>Informações do foguete e da base de lançamento</li>
-                                <li>Sistema de cadastro e login de usuários</li>
-                                <li>Favoritos personalizados por usuário</li>
-                                <li>Tema escuro para melhor experiência visual</li>
+                                <li data-i18n="L1-spacex">Listagem completa de lançamentos da SpaceX</li>
+                                <li data-i18n="L2-spacex">Busca por nome da missão</li>
+                                <li data-i18n="L3-spacex">Visualização de detalhes do lançamento</li>
+                                <li data-i18n="L4-spacex">Informações do foguete e da base de lançamento</li>
+                                <li data-i18n="L5-spacex">Sistema de cadastro e login de usuários</li>
+                                <li data-i18n="L6-spacex">Favoritos personalizados por usuário</li>
+                                <li data-i18n="L7-spacex">Tema escuro para melhor experiência visual</li>
                             </ul>
 
-                            <h4>Arquitetura do aplicativo</h4>
-                            <p>A estrutura do projeto foi organizada seguindo boas práticas de
-                            separação de responsabilidades, com diretórios específicos para
-                            telas, navegação, serviços de API, componentes reutilizáveis e estilos.
-                            Essa organização facilita a manutenção do código e permite a expansão
-                            do aplicativo com novas funcionalidades no futuro.</p>
-                            <p>As requisições para a API da SpaceX são realizadas através de um
-                            serviço dedicado, responsável por buscar os lançamentos e também
-                            carregar informações adicionais como dados do foguete e da plataforma
-                            de lançamento.</p>
+                            <h4 data-i18n="T3-spacex">Arquitetura do aplicativo</h4>
+                            <p data-i18n="P6-spacex">A estrutura do projeto foi organizada seguindo boas práticas de separação de responsabilidades, com diretórios específicos para telas, navegação, serviços de API, componentes reutilizáveis e estilos. Essa organização facilita a manutenção do código e permite a expansão do aplicativo com novas funcionalidades no futuro.</p>
+                            <p data-i18n="P7-spacex">As requisições para a API da SpaceX são realizadas através de um serviço dedicado, responsável por buscar os lançamentos e também carregar informações adicionais como dados do foguete e da plataforma de lançamento.</p>
 
-                            <h4>Tecnologias utilizadas</h4>
-                            <p>O projeto foi desenvolvido utilizando tecnologias modernas do
-                            ecossistema de desenvolvimento mobile com JavaScript.</p>
+                            <h4 data-i18n="T4-spacex">Tecnologias utilizadas</h4>
+                            <p data-i18n="P8-spacex">O projeto foi desenvolvido utilizando tecnologias modernas do ecossistema de desenvolvimento mobile com JavaScript.</p>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -373,7 +331,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -385,14 +343,9 @@
                                 </div>
                             </div>
 
-                            <h4>Gerenciamento de dados</h4>
-                            <p>Os dados dos lançamentos são obtidos diretamente da API pública da
-                            SpaceX. Informações adicionais como dados do foguete e do local de
-                            lançamento são carregadas de forma paralela para enriquecer a tela
-                            de detalhes da missão.</p>
-                            <p>As informações de autenticação e favoritos são armazenadas localmente
-                            utilizando AsyncStorage, permitindo que cada usuário mantenha sua
-                            lista de missões favoritas mesmo após fechar o aplicativo.</p>
+                            <h4 data-i18n="T5-spacex">Gerenciamento de dados</h4>
+                            <p data-i18n="P9-spacex">Os dados dos lançamentos são obtidos diretamente da API pública da SpaceX. Informações adicionais como dados do foguete e do local de lançamento são carregadas de forma paralela para enriquecer a tela de detalhes da missão.</p>
+                            <p data-i18n="P10-spacex">As informações de autenticação e favoritos são armazenadas localmente utilizando AsyncStorage, permitindo que cada usuário mantenha sua lista de missões favoritas mesmo após fechar o aplicativo.</p>
                         </div>
                     </div>
 
@@ -409,67 +362,37 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/ambiente-icon.png" alt="Icon SOS Ambiente" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">S.O.S Ambiente - Eco Actions & CO₂ Tracker</h3>
-                                <p class="resumo">App mobile em React Native para registrar hábitos sustentáveis e calcular emissões de CO₂.</p>
+                                <h3 class="titulo" data-i18n="titulo-ambiente">S.O.S Ambiente - Eco Actions & CO₂ Tracker</h3>
+                                <p class="resumo" data-i18n="resumo-ambiente">App mobile em React Native para registrar hábitos sustentáveis e calcular emissões de CO₂.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>S.O.S Ambiente</strong> é um aplicativo mobile desenvolvido
-                            com React Native e Expo com o objetivo de incentivar hábitos
-                            sustentáveis no dia a dia. A proposta do projeto é permitir que
-                            os usuários registrem ações ecológicas realizadas diariamente
-                            e acompanhem seu impacto ambiental ao longo do tempo.</p>
-                            <p>A aplicação oferece uma interface simples e acessível onde o
-                            usuário pode registrar atividades sustentáveis como reciclagem,
-                            economia de energia ou redução do uso de plástico. Todas as
-                            ações ficam registradas em um histórico que pode ser consultado
-                            posteriormente, permitindo acompanhar a evolução das práticas
-                            ambientais adotadas.</p>
-                            <p>O código completo do projeto está disponível publicamente no
-                            GitHub, permitindo visualizar toda a estrutura da aplicação,
-                            organização das telas e implementação das funcionalidades.</p>
+                            <h4 data-i18n="T1-ambiente">Sobre o projeto</h4>
+                            <p data-i18n="P1-ambiente">O <strong>S.O.S Ambiente</strong> é um aplicativo mobile desenvolvido com React Native e Expo com o objetivo de incentivar hábitos sustentáveis no dia a dia. A proposta do projeto é permitir que os usuários registrem ações ecológicas realizadas diariamente e acompanhem seu impacto ambiental ao longo do tempo.</p>
+                            <p data-i18n="P2-ambiente">A aplicação oferece uma interface simples e acessível onde o usuário pode registrar atividades sustentáveis como reciclagem, economia de energia ou redução do uso de plástico. Todas as ações ficam registradas em um histórico que pode ser consultado posteriormente, permitindo acompanhar a evolução das práticas ambientais adotadas.</p>
+                            <p data-i18n="P3-ambiente">O código completo do projeto está disponível publicamente no GitHub, permitindo visualizar toda a estrutura da aplicação, organização das telas e implementação das funcionalidades.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/SOS-Ambiente" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/SOS-Ambiente" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Registro de ações sustentáveis</h4>
-                            <p>O aplicativo permite registrar diferentes tipos de ações
-                            ecológicas realizadas no cotidiano. Entre elas estão atividades
-                            como reciclagem de materiais, economia de energia elétrica,
-                            uso consciente de recursos naturais e redução do consumo de
-                            plástico.</p>
-                            <p>Cada atividade registrada é adicionada ao histórico do usuário,
-                            permitindo acompanhar todas as ações realizadas ao longo do
-                            tempo. Caso necessário, o usuário também pode remover registros
-                            específicos para manter o histórico organizado.</p>
+                            <h4 data-i18n="T2-ambiente">Registro de ações sustentáveis</h4>
+                            <p data-i18n="P4-ambiente">O aplicativo permite registrar diferentes tipos de ações ecológicas realizadas no cotidiano. Entre elas estão atividades como reciclagem de materiais, economia de energia elétrica, uso consciente de recursos naturais e redução do consumo de plástico.</p>
+                            <p data-i18n="P5-ambiente">Cada atividade registrada é adicionada ao histórico do usuário permitindo acompanhar todas as ações realizadas ao longo do tempo. Caso necessário, o usuário também pode remover registros específicos para manter o histórico organizado.</p>
 
-                            <h4>Controle de emissões de carbono</h4>
-                            <p>Além do registro de ações sustentáveis, o aplicativo também
-                            possui um sistema simples de acompanhamento de emissões de
-                            carbono. O usuário pode registrar atividades relacionadas ao
-                            transporte ou ao uso de eletrônicos e visualizar estimativas
-                            de emissão de CO₂ associadas a essas ações.</p>
-                            <p>A aplicação também disponibiliza um pequeno cálculo de impacto
-                            ambiental, onde o usuário pode inserir informações como
-                            distância percorrida de carro ou tempo de uso de dispositivos
-                            eletrônicos, permitindo gerar uma estimativa aproximada da
-                            emissão de carbono.</p>
+                            <h4 data-i18n="T3-ambiente">Controle de emissões de carbono</h4>
+                            <p  data-i18n="P6-ambiente">Além do registro de ações sustentáveis, o aplicativo também possui um sistema simples de acompanhamento de emissões de carbono. O usuário pode registrar atividades relacionadas ao transporte ou ao uso de eletrônicos e visualizar estimativas de emissão de CO₂ associadas a essas ações.</p>
+                            <p data-i18n="P7-ambiente">A aplicação também disponibiliza um pequeno cálculo de impacto ambiental, onde o usuário pode inserir informações como distância percorrida de carro ou tempo de uso de dispositivos eletrônicos, permitindo gerar uma estimativa aproximada da emissão de carbono.</p>
 
-                            <h4>Interface e navegação</h4>
-                            <p>A interface foi desenvolvida com foco em simplicidade e
-                            facilidade de uso em dispositivos móveis. O aplicativo
-                            possui uma splash screen inicial, navegação entre telas
-                            organizada e elementos visuais que reforçam a temática
-                            ambiental do projeto.</p>
-                            <p>A navegação entre as telas é realizada de forma fluida,
-                            permitindo acessar rapidamente o registro de ações,
-                            o histórico de atividades e as funcionalidades de
-                            cálculo ambiental.</p>
+                            <h4 data-i18n="T4-ambiente">Interface e navegação</h4>
+                            <p data-i18n="P8-ambiente">A interface foi desenvolvida com foco em simplicidade e facilidade de uso em dispositivos móveis. O aplicativo possui uma splash screen inicial, navegação entre telas organizada e elementos visuais que reforçam a temática ambiental do projeto.</p>
+                            <p data-i18n="P9-ambiente">A navegação entre as telas é realizada de forma fluida, permitindo acessar rapidamente o registro de ações, o histórico de atividades e as funcionalidades de cálculo ambiental.</p>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T5-ambiente">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -482,7 +405,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5  data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -508,61 +431,43 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/cafe-icon.png" alt="Icon Smoke Coffee" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Smoke Coffee - Mobile Coffee Shop App</h3>
-                                <p class="resumo">App mobile de cafeteria em React Native com login, cardápio, carrinho e pagamento simulado.</p>
+                                <h3 class="titulo" data-i18n="titulo-coffee">Smoke Coffee - Mobile Coffee Shop App</h3>
+                                <p class="resumo" data-i18n="resumo-coffee">App mobile de cafeteria em React Native com login, cardápio, carrinho e pagamento simulado.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Smoke Coffee</strong> é um aplicativo mobile de cafeteria
-                            desenvolvido com React Native e Expo. O projeto simula uma
-                            experiência completa de pedidos digitais, permitindo que o
-                            usuário explore um cardápio com imagens e preços, adicione
-                            produtos ao carrinho e finalize pedidos diretamente pelo
-                            aplicativo.</p>
-                            <p>O sistema inclui autenticação de usuários com cadastro e login,
-                            além de um perfil editável onde o usuário pode atualizar seus
-                            dados pessoais. As informações são armazenadas localmente no
-                            dispositivo utilizando AsyncStorage, permitindo manter sessões
-                            e dados mesmo após o aplicativo ser fechado.</p>
-                            <p>Durante o processo de compra, o usuário pode selecionar produtos,
-                            visualizar o total do pedido e realizar um checkout simulado com
-                            opções de pagamento via Pix ou cartão. Após a confirmação do
-                            pagamento, o sistema gera um número de pedido e envia uma
-                            notificação indicando que o pedido está pronto para retirada.</p>
-                            <p>O código completo do projeto está disponível publicamente no
-                            GitHub, permitindo visualizar a estrutura da aplicação,
-                            a organização das telas e a implementação das funcionalidades.</p>
+                            <h4 data-i18n="T1-coffee">Sobre o projeto</h4>
+                            <p data-i18n="P1-coffee">O <strong>Smoke Coffee</strong> é um aplicativo mobile de cafeteria desenvolvido com React Native e Expo. O projeto simula uma experiência completa de pedidos digitais, permitindo que o usuário explore um cardápio com imagens e preços, adicione produtos ao carrinho e finalize pedidos diretamente pelo aplicativo.</p>
+                            <p data-i18n="P2-coffee">O sistema inclui autenticação de usuários com cadastro e login, além de um perfil editável onde o usuário pode atualizar seus dados pessoais. As informações são armazenadas localmente no dispositivo utilizando AsyncStorage, permitindo manter sessões e dados mesmo após o aplicativo ser fechado.</p>
+                            <p data-i18n="P3-coffee">Durante o processo de compra, o usuário pode selecionar produtos visualizar o total do pedido e realizar um checkout simulado com opções de pagamento via Pix ou cartão. Após a confirmação do pagamento, o sistema gera um número de pedido e envia uma notificação indicando que o pedido está pronto para retirada.</p>
+                            <p data-i18n="P4-coffee">O código completo do projeto está disponível publicamente no GitHub, permitindo visualizar a estrutura da aplicação, a organização das telas e a implementação das funcionalidades.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/SmokeCoffee" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/SmokeCoffee" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Funcionalidades principais</h4>
+                            <h4 data-i18n="T2-coffee">Funcionalidades principais</h4>
 
                             <ul>
-                                <li>Cadastro e login de usuários</li>
-                                <li>Cardápio com produtos, imagens e preços</li>
-                                <li>Adição e remoção de itens no carrinho</li>
-                                <li>Cálculo automático do total do pedido</li>
-                                <li>Checkout com opções de pagamento via Pix ou cartão</li>
-                                <li>Geração de número de pedido após pagamento</li>
-                                <li>Perfil do usuário com edição de informações</li>
-                                <li>Notificações push simulando a finalização do pedido</li>
+                                <li data-i18n="L1-coffee">Cadastro e login de usuários</li>
+                                <li data-i18n="L2-coffee">Cardápio com produtos, imagens e preços</li>
+                                <li data-i18n="L3-coffee">Adição e remoção de itens no carrinho</li>
+                                <li data-i18n="L4-coffee">Cálculo automático do total do pedido</li>
+                                <li data-i18n="L5-coffee">Checkout com opções de pagamento via Pix ou cartão</li>
+                                <li data-i18n="L6-coffee">Geração de número de pedido após pagamento</li>
+                                <li data-i18n="L7-coffee">Perfil do usuário com edição de informações</li>
+                                <li data-i18n="L8-coffee">Notificações push simulando a finalização do pedido</li>
                             </ul>
 
-                            <h4>Arquitetura do aplicativo</h4>
-                            <p>A navegação do aplicativo foi estruturada utilizando
-                            React Navigation com Stack Navigator, organizando
-                            o fluxo entre as telas de splash, autenticação,
-                            cardápio, pagamento e perfil do usuário.</p>
-                            <p>A aplicação também utiliza dados mockados para
-                            representar os produtos disponíveis no cardápio,
-                            permitindo simular uma experiência completa de
-                            compra sem depender de um backend ou API externa.</p>
+                            <h4 data-i18n="T3-coffee">Arquitetura do aplicativo</h4>
+                            <p data-i18n="P5-coffee">A navegação do aplicativo foi estruturada utilizando React Navigation com Stack Navigator, organizando o fluxo entre as telas de splash, autenticação cardápio, pagamento e perfil do usuário.</p>
+                            <p data-i18n="P6-coffee">A aplicação também utiliza dados mockados para representar os produtos disponíveis no cardápio, permitindo simular uma experiência completa de compra sem depender de um backend ou API externa.</p>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T4-coffee">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -575,7 +480,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -601,13 +506,13 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/avaliacao-icon.png" alt="Icon Avaliação" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Avalia Aqui — Plataforma Full-Stack de Avaliações</h3>
-                                <p class="resumo">Plataforma web full-stack para avaliar estabelecimentos com notas, comentários e ranking.</p>
+                                <h3 class="titulo" data-i18n="titulo-avalia-aqui">Avalia Aqui — Plataforma Full-Stack de Avaliações</h3>
+                                <p class="resumo" data-i18n="resumo-avalia-aqui">Plataforma web full-stack para avaliar estabelecimentos com notas, comentários e ranking.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
+                            <h4 data-i18n="T1-avalia-aqui">Sobre o projeto</h4>
 
                             <div class="secao-video">
                                 <div class="video-container">
@@ -615,33 +520,42 @@
                                 </div>
 
                                 <div class="texto-video">
-                                    <p>O <strong>Avalia Aqui</strong> é uma plataforma web desenvolvida para permitir que usuários avaliem e comentem sobre diferentes estabelecimentos. O projeto nasceu com o objetivo de criar um sistema completo de reviews, combinando um design responsivo e original com uma arquitetura de dados robusta.</p>
-                                    <p>Através de uma interface limpa e focada na experiência do usuário (Mobile First), a plataforma oferece um sistema de votação por estrelas, um ranking dinâmico ordenado por notas e uma seção de comentários encadeados, onde os usuários podem interagir curtindo e respondendo opiniões de terceiros.</p>
-                                    <p>No vídeo ao lado, é possível conferir uma demonstração prática da plataforma em funcionamento, navegando pelas telas de votação, ranking e comentários.</p>
+                                    <p data-i18n="P1-avalia-aqui">O <strong>Avalia Aqui</strong> é uma plataforma web desenvolvida para permitir que usuários avaliem e comentem sobre diferentes estabelecimentos. O projeto nasceu com o objetivo de criar um sistema completo de reviews, combinando um design responsivo e original com uma arquitetura de dados robusta.</p>
+                                    <p data-i18n="P2-avalia-aqui">Através de uma interface limpa e focada na experiência do usuário (Mobile First), a plataforma oferece um sistema de votação por estrelas, um ranking dinâmico ordenado por notas e uma seção de comentários encadeados, onde os usuários podem interagir curtindo e respondendo opiniões de terceiros.</p>
+                                    <p data-i18n="P3-avalia-aqui">No vídeo ao lado, é possível conferir uma demonstração prática da plataforma em funcionamento, navegando pelas telas de votação, ranking e comentários.</p>
                                 </div>
                             </div>
 
-                            <h4>Arquitetura e Versões</h4>
-                            <p>Um dos grandes destaques deste projeto é a sua construção estrutural. A interface (Frontend) foi inteiramente desenvolvida utilizando <strong>HTML, CSS e JavaScript puro (Vanilla JS)</strong>, sem o uso de frameworks, garantindo total controle sobre o DOM, estilos, criação do carrossel e animações interativas.</p>
-                            <p>O projeto foi dividido em duas abordagens técnicas distintas para demonstrar versatilidade:</p>
+                            <h4 data-i18n="T2-avalia-aqui">Arquitetura e Versões</h4>
+                            <p data-i18n="P4-avalia-aqui">Um dos grandes destaques deste projeto é a sua construção estrutural. A interface (Frontend) foi inteiramente desenvolvida utilizando <strong>HTML, CSS e JavaScript puro (Vanilla JS)</strong>, sem o uso de frameworks, garantindo total controle sobre o DOM, estilos, criação do carrossel e animações interativas.</p>
+                            <p data-i18n="P5-avalia-aqui">O projeto foi dividido em duas abordagens técnicas distintas para demonstrar versatilidade:</p>
 
                             <ul>
-                                <li><strong>Versão Frontend-Only:</strong> Uma versão focada apenas na interface, onde a persistência de dados (votos, curtidas e comentários) é simulada e gerenciada localmente utilizando o <code>localStorage</code> do navegador.</li>
-                                <li><strong>Versão Full-Stack:</strong> A evolução da plataforma, integrada a uma API RESTful construída com <strong>Node.js e Express</strong>. O gerenciamento do banco de dados relacional é feito através do ORM <strong>Sequelize</strong> utilizando <strong>SQLite</strong> (para desenvolvimento e demonstração), garantindo operações seguras e persistentes de CRUD.</li>
+                                <li data-i18n="L1-avalia-aqui"><strong>Versão Frontend-Only:</strong> Uma versão focada apenas na interface, onde a persistência de dados (votos, curtidas e comentários) é simulada e gerenciada localmente utilizando o <code>localStorage</code> do navegador.</li>
+                                <li data-i18n="L2-avalia-aqui"><strong>Versão Full-Stack:</strong> A evolução da plataforma, integrada a uma API RESTful construída com <strong>Node.js e Express</strong>. O gerenciamento do banco de dados relacional é feito através do ORM <strong>Sequelize</strong> utilizando <strong>SQLite</strong> (para desenvolvimento e demonstração), garantindo operações seguras e persistentes de CRUD.</li>
                             </ul>
 
-                            <h4>Identidade e Segurança</h4>
-                            <p>Para garantir a integridade das avaliações sem forçar a criação de contas complexas, o sistema implementa uma estratégia de identificação anônima. Um identificador único (UUID) é gerado e salvo no navegador do usuário, assegurando que cada pessoa possa avaliar um estabelecimento apenas uma vez, mas permitindo que editem seus próprios votos e comentários posteriormente.</p>
+                            <h4 data-i18n="T3-avalia-aqui">Identidade e Segurança</h4>
+                            <p data-i18n="P6-avalia-aqui">Para garantir a integridade das avaliações sem forçar a criação de contas complexas, o sistema implementa uma estratégia de identificação anônima. Um identificador único (UUID) é gerado e salvo no navegador do usuário, assegurando que cada pessoa possa avaliar um estabelecimento apenas uma vez, mas permitindo que editem seus próprios votos e comentários posteriormente.</p>
 
                             <div class="links">
-                                <a href="https://avalia-aqui.vercel.app/" target="_blank" class="botao-link  avalia-aqui"><i class="fa-solid fa-star"></i> Avalia Aqui Demo</a>
+                                <a href="https://avalia-aqui.vercel.app/" target="_blank" class="botao-link  avalia-aqui">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span data-i18n="avalia-aqui-demo">Avalia Aqui Demo</span>
+                                </a>
                                 
-                                <a href="https://github.com/PedroRossZny/Site-Avaliacoes-Frontend" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório Frontend</a>
+                                <a href="https://github.com/PedroRossZny/Site-Avaliacoes-Frontend" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="front-repo">Repositório Frontend</span>
+                                </a>
                                 
-                                <a href="https://github.com/PedroRossZny/Site-Avaliacoes-Complete" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório Full-Stack</a>
+                                <a href="https://github.com/PedroRossZny/Site-Avaliacoes-Complete" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="full-repo">Repositório Full-Stack</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T4-avalia-aqui">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -662,7 +576,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Banco de Dados</h5>
+                                    <h5 data-i18n="banco-de-dados">Banco de Dados</h5>
                                     <ul>
                                         <li>SQLite</li>
                                         <li>Sequelize</li>
@@ -670,7 +584,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -693,31 +607,34 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/portfolio-project-icon.png" alt="Icon Portfólio" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Projeto Portfólio</h3>
-                                <p class="resumo">Portfólio Pessoal desenvolvido com HTML, CSS & JavaScript focado em responsividade.</p>
+                                <h3 class="titulo" data-i18n="titulo-portfolio">Projeto Portfólio</h3>
+                                <p class="resumo" data-i18n="resumo-portfolio">Portfólio Pessoal desenvolvido com HTML, CSS & JavaScript focado em responsividade.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>Este projeto representa o marco final do curso de HTML5 e CSS3, servindo como uma vitrine para consolidar os fundamentos do desenvolvimento web front-end. Ele foi concebido para ser um portfólio funcional, atuando como um "hub" que organiza e apresenta diversos outros projetos de estudo desenvolvidos ao longo da formação.</p>
-                            <p>O foco principal foi a criação de uma interface intuitiva e totalmente responsiva, garantindo que o currículo e os projetos anexos sejam visualizados com clareza em qualquer dispositivo, desde telas mobile pequenas até monitores desktop.</p>
+                            <h4 data-i18n="T1-portfolio">Sobre o projeto</h4>
+                            <p data-i18n="P1-portfolio">Este projeto representa o marco final do curso de HTML5 e CSS3, servindo como uma vitrine para consolidar os fundamentos do desenvolvimento web front-end. Ele foi concebido para ser um portfólio funcional, atuando como um "hub" que organiza e apresenta diversos outros projetos de estudo desenvolvidos ao longo da formação.</p>
+                            <p data-i18n="P2-portfolio">O foco principal foi a criação de uma interface intuitiva e totalmente responsiva, garantindo que o currículo e os projetos anexos sejam visualizados com clareza em qualquer dispositivo, desde telas mobile pequenas até monitores desktop.</p>
 
-                            <h4>Destaques Técnicos</h4>
-                            <p>A construção deste site permitiu a aplicação prática de conceitos essenciais para a qualidade de software no front-end:</p>
+                            <h4 data-i18n="T2-portfolio">Destaques Técnicos</h4>
+                            <p data-i18n="P3-portfolio">A construção deste site permitiu a aplicação prática de conceitos essenciais para a qualidade de software no front-end:</p>
 
                             <ul>
-                                <li><strong>Semântica e SEO:</strong> Utilização rigorosa de tags HTML5 semânticas para melhorar a acessibilidade e o ranqueamento em motores de busca.</li>
-                                <li><strong>Design Responsivo:</strong> Implementação de layouts adaptáveis utilizando Flexbox e Media Queries, assegurando a integridade visual em múltiplas resoluções.</li>
-                                <li><strong>Gerenciamento de Temas:</strong> Desenvolvimento de uma lógica em JavaScript para alternância entre modo claro e escuro (Dark/Light Mode), com persistência de dados no <code>localStorage</code> do navegador.</li>
-                                <li><strong>Interatividade e Estilo:</strong> Aplicação de variáveis CSS para facilitar a manutenção de cores, além do uso de animações de transição e scroll suave para uma navegação mais fluida.</li>
+                                <li data-i18n="L1-portfolio"><strong>Semântica e SEO:</strong> Utilização rigorosa de tags HTML5 semânticas para melhorar a acessibilidade e o ranqueamento em motores de busca.</li>
+                                <li data-i18n="L2-portfolio"><strong>Design Responsivo:</strong> Implementação de layouts adaptáveis utilizando Flexbox e Media Queries, assegurando a integridade visual em múltiplas resoluções.</li>
+                                <li data-i18n="L3-portfolio"><strong>Gerenciamento de Temas:</strong> Desenvolvimento de uma lógica em JavaScript para alternância entre modo claro e escuro (Dark/Light Mode), com persistência de dados no <code>localStorage</code> do navegador.</li>
+                                <li data-i18n="L4-portfolio"><strong>Interatividade e Estilo:</strong> Aplicação de variáveis CSS para facilitar a manutenção de cores, além do uso de animações de transição e scroll suave para uma navegação mais fluida.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/portfolio-project" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/portfolio-project" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T3-portfolio">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -730,7 +647,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -753,33 +670,36 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/login-icon.png" alt="Icon Login" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Tela de Login</h3>
-                                <p class="resumo">Interface de login responsiva com HTML5 e CSS3, seguindo abordagem Mobile First.</p>
+                                <h3 class="titulo" data-i18n="titulo-login">Tela de Login</h3>
+                                <p class="resumo" data-i18n="resumo-login">Interface de login responsiva com HTML5 e CSS3, seguindo abordagem Mobile First.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Login Project</strong> é uma interface de autenticação moderna, desenvolvida com o objetivo de aplicar as melhores práticas de design responsivo e experiência do usuário (UX). O projeto foca em uma estética limpa, utilizando uma paleta de cores equilibrada entre tons de verde e lilás, combinada com elementos visuais que garantem uma navegação intuitiva.</p>
-                            <p>A interface foi construída seguindo a estratégia <strong>Mobile-First</strong>, onde a estrutura é pensada inicialmente para dispositivos móveis e se expande de forma fluida para tablets e desktops, reorganizando seus elementos para aproveitar melhor o espaço disponível em telas maiores.</p>
+                            <h4 data-i18n="T1-login">Sobre o projeto</h4>
+                            <p data-i18n="P1-login">O <strong>Login Project</strong> é uma interface de autenticação moderna, desenvolvida com o objetivo de aplicar as melhores práticas de design responsivo e experiência do usuário (UX). O projeto foca em uma estética limpa, utilizando uma paleta de cores equilibrada entre tons de verde e lilás, combinada com elementos visuais que garantem uma navegação intuitiva.</p>
+                            <p data-i18n="P2-login">A interface foi construída seguindo a estratégia <strong>Mobile-First</strong>, onde a estrutura é pensada inicialmente para dispositivos móveis e se expande de forma fluida para tablets e desktops, reorganizando seus elementos para aproveitar melhor o espaço disponível em telas maiores.</p>
 
-                            <h4>Destaques Técnicos e Responsividade</h4>
-                            <p>O grande diferencial técnico deste projeto está na manipulação avançada de layouts através de CSS puro:</p>
+                            <h4 data-i18n="T2-login">Destaques Técnicos e Responsividade</h4>
+                            <p data-i18n="P3-login">O grande diferencial técnico deste projeto está na manipulação avançada de layouts através de CSS puro:</p>
 
                             <ul>
-                                <li><strong>Arquitetura Mobile-First:</strong> O design começa em uma coluna única para celulares e evolui para um layout em duas colunas (Side-by-Side) em resoluções maiores, utilizando Media Queries estratégicas para alternar a posição da imagem e do formulário.</li>
-                                <li><strong>Visual Moderno com CSS3:</strong> Uso de gradientes lineares (Linear Gradients) complexos no background, bordas arredondadas e sombras (Box Shadows) que conferem profundidade e um aspecto profissional à interface.</li>
-                                <li><strong>Interatividade e Transições:</strong> Implementação de efeitos de <code>transition</code> para suavizar as mudanças de estado da aplicação e pseudo-classes como <code>:focus-within</code>, que melhoram o feedback visual quando o usuário interage com os campos de entrada.</li>
-                                <li><strong>Validação de Formulários:</strong> Utilização de atributos nativos do HTML5 (<code>required</code>, <code>minlength</code>, <code>maxlength</code>) para garantir a integridade dos dados antes do envio, além do uso de tipos específicos de input (email e password) para acionar o teclado correto em dispositivos móveis.</li>
+                                <li data-i18n="L1-login"><strong>Arquitetura Mobile-First:</strong> O design começa em uma coluna única para celulares e evolui para um layout em duas colunas (Side-by-Side) em resoluções maiores, utilizando Media Queries estratégicas para alternar a posição da imagem e do formulário.</li>
+                                <li data-i18n="L2-login"><strong>Visual Moderno com CSS3:</strong> Uso de gradientes lineares (Linear Gradients) complexos no background, bordas arredondadas e sombras (Box Shadows) que conferem profundidade e um aspecto profissional à interface.</li>
+                                <li data-i18n="L3-login"><strong>Interatividade e Transições:</strong> Implementação de efeitos de <code>transition</code> para suavizar as mudanças de estado da aplicação e pseudo-classes como <code>:focus-within</code>, que melhoram o feedback visual quando o usuário interage com os campos de entrada.</li>
+                                <li data-i18n="L4-login"><strong>Validação de Formulários:</strong> Utilização de atributos nativos do HTML5 (<code>required</code>, <code>minlength</code>, <code>maxlength</code>) para garantir a integridade dos dados antes do envio, além do uso de tipos específicos de input (email e password) para acionar o teclado correto em dispositivos móveis.</li>
                             </ul>
 
-                            <p>Para a iconografia, foi integrada a biblioteca <strong>Material Icons</strong> do Google, garantindo que os campos de login e senha tenham identificadores visuais universais e acessíveis.</p>
+                            <p data-i18n="P4-login">Para a iconografia, foi integrada a biblioteca <strong>Material Icons</strong> do Google, garantindo que os campos de login e senha tenham identificadores visuais universais e acessíveis.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/login-project" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/login-project" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T3-login">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -791,7 +711,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -815,31 +735,34 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/social-icon.png" alt="Icon Redes Sociais" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Redes Sociais</h3>
-                                <p class="resumo">Interface web interativa que simula um smartphone com navegação entre perfis sociais.</p>
+                                <h3 class="titulo" data-i18n="titulo-social">Redes Sociais</h3>
+                                <p class="resumo" data-i18n="resumo-social">Interface web interativa que simula um smartphone com navegação entre perfis sociais.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Projeto Redes Sociais</strong> é um experimento visual interativo que recria a experiência de uso de um smartphone diretamente no navegador. O objetivo foi criar uma moldura realista (Mockup) de um iPhone onde o usuário pode navegar entre diferentes perfis sociais de forma fluida.</p>
-                            <p>Através de um menu lateral externo, o visitante interage com o dispositivo, fazendo com que o conteúdo dentro da "tela" do celular mude dinamicamente, simulando a abertura de aplicativos e páginas reais.</p>
+                            <h4 data-i18n="T1-social">Sobre o projeto</h4>
+                            <p data-i18n="P1-social">O <strong>Projeto Redes Sociais</strong> é um experimento visual interativo que recria a experiência de uso de um smartphone diretamente no navegador. O objetivo foi criar uma moldura realista (Mockup) de um iPhone onde o usuário pode navegar entre diferentes perfis sociais de forma fluida.</p>
+                            <p data-i18n="P2-social">Através de um menu lateral externo, o visitante interage com o dispositivo, fazendo com que o conteúdo dentro da "tela" do celular mude dinamicamente, simulando a abertura de aplicativos e páginas reais.</p>
 
-                            <h4>Destaques Técnicos e Composição</h4>
-                            <p>A execução deste projeto exigiu um controle preciso de design e arquitetura front-end:</p>
+                            <h4 data-i18n="T2-social">Destaques Técnicos e Composição</h4>
+                            <p data-i18n="P3-social">A execução deste projeto exigiu um controle preciso de design e arquitetura front-end:</p>
 
                             <ul>
-                                <li><strong>Navegação via Iframes:</strong> Implementação inteligente de <code>iframes</code> utilizando o atributo <code>name</code> para carregar múltiplas páginas internas (Home, Instagram, GitHub e YouTube) sem a necessidade de recarregar a página principal.</li>
-                                <li><strong>Posicionamento Absoluto e Camadas:</strong> Uso estratégico de <code>position: absolute</code> e <code>transform: translate</code> para centralizar o dispositivo na tela e alinhar o conteúdo interno exatamente nos limites da moldura do aparelho.</li>
-                                <li><strong>Estilização de Interface (UI):</strong> Criação de botões flutuantes com efeitos de <code>hover</code>, <code>box-shadow</code> e <code>transform</code>, proporcionando uma sensação de profundidade e feedback imediato ao usuário.</li>
-                                <li><strong>Refinamento de UX:</strong> Personalização da barra de rolagem via <code>::-webkit-scrollbar</code> para manter a estética minimalista dentro do simulador, ocultando elementos desnecessários e focando no conteúdo visual.</li>
+                                <li data-i18n="L1-social"><strong>Navegação via Iframes:</strong> Implementação inteligente de <code>iframes</code> utilizando o atributo <code>name</code> para carregar múltiplas páginas internas (Home, Instagram, GitHub e YouTube) sem a necessidade de recarregar a página principal.</li>
+                                <li data-i18n="L2-social"><strong>Posicionamento Absoluto e Camadas:</strong> Uso estratégico de <code>position: absolute</code> e <code>transform: translate</code> para centralizar o dispositivo na tela e alinhar o conteúdo interno exatamente nos limites da moldura do aparelho.</li>
+                                <li data-i18n="L3-social"><strong>Estilização de Interface (UI):</strong> Criação de botões flutuantes com efeitos de <code>hover</code>, <code>box-shadow</code> e <code>transform</code>, proporcionando uma sensação de profundidade e feedback imediato ao usuário.</li>
+                                <li data-i18n="L4-social"><strong>Refinamento de UX:</strong> Personalização da barra de rolagem via <code>::-webkit-scrollbar</code> para manter a estética minimalista dentro do simulador, ocultando elementos desnecessários e focando no conteúdo visual.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/social-project" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/social-project" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T3-social">Tecnologias utilizadas</h4>
                             <div class="tech-grid">
                                 <div class="tech-category">
                                     <h5>Frontend</h5>
@@ -850,7 +773,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -873,31 +796,34 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/cordel-icon.png" alt="Icon Cordel" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Cordel Moderno</h3>
-                                <p class="resumo">Página web imersiva que utiliza Parallax para criar profundidade visual durante a rolagem.</p>
+                                <h3 class="titulo" data-i18n="titulo-cordel">Cordel Moderno</h3>
+                                <p class="resumo" data-i18n="resumo-cordel">Página web imersiva que utiliza Parallax para criar profundidade visual durante a rolagem.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Cordel Moderno</strong> é uma página web interativa desenvolvida com o objetivo de unir a literatura tradicional à tecnologia moderna através do design de interface. O projeto foca em proporcionar uma experiência de leitura imersiva, utilizando a rolagem da página (scroll) como elemento ativo da narrativa.</p>
-                            <p>A página foi construída para demonstrar como a combinação harmoniosa entre tipografia, espaçamento e efeitos visuais pode gerar um forte impacto estético e reter a atenção do usuário, mantendo o código limpo e sem a necessidade de scripts externos.</p>
+                            <h4 data-i18n="T1-cordel">Sobre o projeto</h4>
+                            <p data-i18n="P1-cordel">O <strong>Cordel Moderno</strong> é uma página web interativa desenvolvida com o objetivo de unir a literatura tradicional à tecnologia moderna através do design de interface. O projeto foca em proporcionar uma experiência de leitura imersiva, utilizando a rolagem da página (scroll) como elemento ativo da narrativa.</p>
+                            <p data-i18n="P2-cordel">A página foi construída para demonstrar como a combinação harmoniosa entre tipografia, espaçamento e efeitos visuais pode gerar um forte impacto estético e reter a atenção do usuário, mantendo o código limpo e sem a necessidade de scripts externos.</p>
 
-                            <h4>Destaques Técnicos e Experiência Visual</h4>
-                            <p>A execução técnica deste projeto destaca o domínio de recursos avançados e modernos do CSS3:</p>
+                            <h4 data-i18n="T2-cordel">Destaques Técnicos e Experiência Visual</h4>
+                            <p data-i18n="P3-cordel">A execução técnica deste projeto destaca o domínio de recursos avançados e modernos do CSS3:</p>
 
                             <ul>
-                                <li><strong>Efeito Parallax Nativo:</strong> Criação de uma ilusão de profundidade (3D) durante a rolagem da página utilizando puramente a propriedade <code>background-attachment: fixed</code> combinada com o sombreamento interno de seções.</li>
-                                <li><strong>Tipografia Fluida e Responsiva:</strong> Uso estratégico de Viewport Units (<code>vw</code> e <code>vh</code>) e medidas relativas (<code>em</code>). Isso garante que o tamanho das fontes e os espaçamentos escalem proporcionalmente e de forma fluida em qualquer dispositivo, do mobile ao monitor ultrawide.</li>
-                                <li><strong>Integração de Web Fonts:</strong> Consumo da API do Google Fonts via <code>@import</code> para carregar tipografias específicas que conversam com o tema da poesia (como fontes cursivas e de destaque).</li>
-                                <li><strong>Arquitetura CSS:</strong> Implementação de Variáveis CSS (Custom Properties no <code>:root</code>) para gerenciar o sistema de tipografia de ponta a ponta, facilitando futuras manutenções e escalabilidade do layout.</li>
+                                <li data-i18n="L1-cordel"><strong>Efeito Parallax Nativo:</strong> Criação de uma ilusão de profundidade (3D) durante a rolagem da página utilizando puramente a propriedade <code>background-attachment: fixed</code> combinada com o sombreamento interno de seções.</li>
+                                <li data-i18n="L2-cordel"><strong>Tipografia Fluida e Responsiva:</strong> Uso estratégico de Viewport Units (<code>vw</code> e <code>vh</code>) e medidas relativas (<code>em</code>). Isso garante que o tamanho das fontes e os espaçamentos escalem proporcionalmente e de forma fluida em qualquer dispositivo, do mobile ao monitor ultrawide.</li>
+                                <li data-i18n="L3-cordel"><strong>Integração de Web Fonts:</strong> Consumo da API do Google Fonts via <code>@import</code> para carregar tipografias específicas que conversam com o tema da poesia (como fontes cursivas e de destaque).</li>
+                                <li data-i18n="L4-cordel"><strong>Arquitetura CSS:</strong> Implementação de Variáveis CSS (Custom Properties no <code>:root</code>) para gerenciar o sistema de tipografia de ponta a ponta, facilitando futuras manutenções e escalabilidade do layout.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/project-cordel" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/project-cordel" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T3-cordel">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -909,7 +835,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -933,31 +859,34 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/android-icon.png" alt="Icon Android" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Projeto História do Android</h3>
-                                <p class="resumo">Artigo web responsivo sobre o mascote Android e versões do sistema, criado com HTML5 e CSS3.</p>
+                                <h3 class="titulo" data-i18n="titulo-android">Projeto História do Android</h3>
+                                <p class="resumo" data-i18n="resumo-android">Artigo web responsivo sobre o mascote Android e versões do sistema, criado com HTML5 e CSS3.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>História do Android</strong> é um artigo digital totalmente responsivo que explora as origens do mascote do sistema operacional. Mais do que uma simples página de texto, o projeto foi concebido para ser um laboratório prático de boas práticas de desenvolvimento web moderno.</p>
-                            <p>O foco principal esteve na aplicação rigorosa de HTML5 semântico para melhorar a acessibilidade e o SEO, combinado com técnicas de CSS3 para criar um layout fluido, tipografia customizada e mídias que se adaptam perfeitamente a qualquer tamanho de tela.</p>
+                            <h4 data-i18n="T1-android">Sobre o projeto</h4>
+                            <p data-i18n="P1-android">O <strong>História do Android</strong> é um artigo digital totalmente responsivo que explora as origens do mascote do sistema operacional. Mais do que uma simples página de texto, o projeto foi concebido para ser um laboratório prático de boas práticas de desenvolvimento web moderno.</p>
+                            <p data-i18n="P2-android">O foco principal esteve na aplicação rigorosa de HTML5 semântico para melhorar a acessibilidade e o SEO, combinado com técnicas de CSS3 para criar um layout fluido, tipografia customizada e mídias que se adaptam perfeitamente a qualquer tamanho de tela.</p>
 
-                            <h4>Destaques Técnicos e Boas Práticas</h4>
-                            <p>A construção desta interface evidencia o domínio sobre recursos nativos essenciais do Front-end:</p>
+                            <h4 data-i18n="T2-android">Destaques Técnicos e Boas Práticas</h4>
+                            <p data-i18n="P3-android">A construção desta interface evidencia o domínio sobre recursos nativos essenciais do Front-end:</p>
 
                             <ul>
-                                <li><strong>Semântica e Acessibilidade:</strong> Estruturação da página utilizando tags de conteúdo (<code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>) e tags de detalhamento (como <code>&lt;abbr&gt;</code> para siglas), tornando o site amigável para leitores de tela e motores de busca.</li>
-                                <li><strong>Imagens Responsivas (Art Direction):</strong> Implementação da tag <code>&lt;picture&gt;</code> com <code>&lt;source&gt;</code> para carregar imagens diferentes dependendo da resolução do dispositivo (media queries direto no HTML), otimizando o consumo de dados móveis.</li>
-                                <li><strong>Vídeos Embutidos Fluidos:</strong> Aplicação de uma técnica avançada de CSS (utilizando <code>padding-bottom</code> relativo e <code>position: absolute</code>) para garantir que o <code>iframe</code> do YouTube mantenha a proporção de 16:9 em qualquer resolução, sem quebrar o layout.</li>
-                                <li><strong>CSS Avançado:</strong> Uso de pseudo-elementos (<code>::after</code>) para inserir ícones dinamicamente em links externos, customização de marcadores de lista com caracteres Unicode e organização do código através de Variáveis CSS (<code>:root</code>).</li>
+                                <li data-i18n="L1-android"><strong>Semântica e Acessibilidade:</strong> Estruturação da página utilizando tags de conteúdo (<code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>) e tags de detalhamento (como <code>&lt;abbr&gt;</code> para siglas), tornando o site amigável para leitores de tela e motores de busca.</li>
+                                <li data-i18n="L2-android"><strong>Imagens Responsivas (Art Direction):</strong> Implementação da tag <code>&lt;picture&gt;</code> com <code>&lt;source&gt;</code> para carregar imagens diferentes dependendo da resolução do dispositivo (media queries direto no HTML), otimizando o consumo de dados móveis.</li>
+                                <li data-i18n="L3-android"><strong>Vídeos Embutidos Fluidos:</strong> Aplicação de uma técnica avançada de CSS (utilizando <code>padding-bottom</code> relativo e <code>position: absolute</code>) para garantir que o <code>iframe</code> do YouTube mantenha a proporção de 16:9 em qualquer resolução, sem quebrar o layout.</li>
+                                <li data-i18n="L4-android"><strong>CSS Avançado:</strong> Uso de pseudo-elementos (<code>::after</code>) para inserir ícones dinamicamente em links externos, customização de marcadores de lista com caracteres Unicode e organização do código através de Variáveis CSS (<code>:root</code>).</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/project-android" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/project-android" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T3-android">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
@@ -969,7 +898,7 @@
                                 </div>
 
                                 <div class="tech-category">
-                                    <h5>Ferramentas</h5>
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
                                     <ul>
                                         <li>Git</li>
                                         <li>GitHub</li>
@@ -992,37 +921,43 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/javascript-icon.png" alt="Icon JavaScript" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Estudos de Javascript</h3>
-                                <p class="resumo">Estudos estruturados em JavaScript moderno, dos fundamentos a conceitos avançados aplicados.</p>
+                                <h3 class="titulo" data-i18n="titulo-javascript">Estudos de Javascript</h3>
+                                <p class="resumo" data-i18n="resumo-javascript">Estudos estruturados em JavaScript moderno, dos fundamentos a conceitos avançados aplicados.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre os Estudos</h4>
-                            <p>Este repositório reúne uma série de exercícios e projetos práticos desenvolvidos para consolidar os fundamentos do <strong>JavaScript (Vanilla)</strong>. O foco foi ir além da teoria, aplicando conceitos de lógica, algoritmos e interatividade diretamente no navegador.</p>
-                            <p>A coleção está organizada em duas etapas, cobrindo desde a sintaxe inicial e comandos básicos até a manipulação dinâmica de elementos da página, permitindo uma compreensão profunda de como a linguagem se comunica com o HTML e o CSS.</p>
+                            <h4 data-i18n="T1-javascript">Sobre os Estudos</h4>
+                            <p data-i18n="P1-javascript">Este repositório reúne uma série de exercícios e projetos práticos desenvolvidos para consolidar os fundamentos do <strong>JavaScript (Vanilla)</strong>. O foco foi ir além da teoria, aplicando conceitos de lógica, algoritmos e interatividade diretamente no navegador.</p>
+                            <p data-i18n="P2-javascript">A coleção está organizada em duas etapas, cobrindo desde a sintaxe inicial e comandos básicos até a manipulação dinâmica de elementos da página, permitindo uma compreensão profunda de como a linguagem se comunica com o HTML e o CSS.</p>
 
-                            <h4>Destaques Técnicos e Aprendizados</h4>
-                            <p>Os módulos abrangem competências essenciais para a construção de interfaces interativas:</p>
+                            <h4 data-i18n="T2-javascript">Destaques Técnicos e Aprendizados</h4>
+                            <p data-i18n="P3-javascript">Os módulos abrangem competências essenciais para a construção de interfaces interativas:</p>
 
                             <ul>
-                                <li><strong>Manipulação de DOM:</strong> Uso intensivo de <code>getElementById</code>, <code>querySelector</code> e criação dinâmica de elementos para transformar páginas estáticas em experiências interativas.</li>
-                                <li><strong>Lógica e Algoritmos:</strong> Prática com estruturas condicionais, laços de repetição e funções, fundamentais para a resolução de problemas complexos no backend e frontend.</li>
-                                <li><strong>Tratamento de Eventos:</strong> Implementação de <code>EventListeners</code> para capturar interações do usuário (cliques, digitação, movimentação do mouse) e executar ações em tempo real.</li>
-                                <li><strong>Estilização Dinâmica:</strong> Alteração de propriedades CSS via JavaScript para criar feedbacks visuais e transições de estado na interface.</li>
+                                <li data-i18n="L1-javascript"><strong>Manipulação de DOM:</strong> Uso intensivo de <code>getElementById</code>, <code>querySelector</code> e criação dinâmica de elementos para transformar páginas estáticas em experiências interativas.</li>
+                                <li data-i18n="L2-javascript"><strong>Lógica e Algoritmos:</strong> Prática com estruturas condicionais, laços de repetição e funções, fundamentais para a resolução de problemas complexos no backend e frontend.</li>
+                                <li data-i18n="L3-javascript"><strong>Tratamento de Eventos:</strong> Implementação de <code>EventListeners</code> para capturar interações do usuário (cliques, digitação, movimentação do mouse) e executar ações em tempo real.</li>
+                                <li data-i18n="L4-javascript"><strong>Estilização Dinâmica:</strong> Alteração de propriedades CSS via JavaScript para criar feedbacks visuais e transições de estado na interface.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/javascript-course" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório Parte 1</a>
+                                <a href="https://github.com/PedroRossZny/javascript-course" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo-1">Repositório Parte 1</span>
+                                </a>
                                 
-                                <a href="https://github.com/PedroRossZny/javascript-course-2" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório Parte 2</a>
+                                <a href="https://github.com/PedroRossZny/javascript-course-2" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo-2">Repositório Parte 2</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias exploradas</h4>
+                            <h4 data-i18n="T3-javascript">Tecnologias exploradas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>JavaScript</li>
                                     </ul>
@@ -1044,35 +979,38 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/python-icon.png" alt="Icon Python" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Estudos de Python</h3>
-                                <p class="resumo">Estudos estruturados em Python com mais de 100 exercícios, da lógica básica à modularização e tratamento de exceções.</p>
+                                <h3 class="titulo" data-i18n="titulo-python">Estudos de Python</h3>
+                                <p class="resumo" data-i18n="resumo-python">Estudos estruturados em Python com mais de 100 exercícios, da lógica básica à modularização e tratamento de exceções.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre os Estudos</h4>
-                            <p>Este repositório é um compilado de estudos práticos em <strong>Python 3</strong>, focado no desenvolvimento de lógica algorítmica e resolução de problemas. A coleção abrange desde a manipulação básica de dados e tipos até a criação de sistemas modulares e jogos interativos via terminal.</p>
-                            <p>Um dos destaques é o <strong>Jogo de Adivinhação Algorítmica</strong>, onde apliquei conceitos de geração de números pseudo-aleatórios e estruturas de controle de fluxo para criar uma interação entre o usuário e a máquina.</p>
+                            <h4 data-i18n="T1-python">Sobre os Estudos</h4>
+                            <p data-i18n="P1-python">Este repositório é um compilado de estudos práticos em <strong>Python 3</strong>, focado no desenvolvimento de lógica algorítmica e resolução de problemas. A coleção abrange desde a manipulação básica de dados e tipos até a criação de sistemas modulares e jogos interativos via terminal.</p>
+                            <p data-i18n="P2-python">Um dos destaques é o <strong>Jogo de Adivinhação Algorítmica</strong>, onde apliquei conceitos de geração de números pseudo-aleatórios e estruturas de controle de fluxo para criar uma interação entre o usuário e a máquina.</p>
 
-                            <h4>Destaques Técnicos e Fundamentos</h4>
-                            <p>Os códigos demonstram uma base sólida em conceitos fundamentais para qualquer desenvolvedor:</p>
+                            <h4 data-i18n="T2-python">Destaques Técnicos e Fundamentos</h4>
+                            <p data-i18n="P3-python">Os códigos demonstram uma base sólida em conceitos fundamentais para qualquer desenvolvedor:</p>
 
                             <ul>
-                                <li><strong>Algoritmos e Lógica:</strong> Implementação de estruturas condicionais complexas e laços de repetição (<code>for</code>, <code>while</code>) para processamento de dados e controle de jogos.</li>
-                                <li><strong>Modularização e Reutilização:</strong> Organização de funções em módulos externos (como o uso de <code>uteis.py</code>), demonstrando conhecimento em arquitetura de código limpo e organizado.</li>
-                                <li><strong>Bibliotecas Nativas:</strong> Utilização de módulos built-in do Python, como o <code>random</code> para lógica de jogos e <code>time</code> para controle de fluxo e animações no terminal.</li>
-                                <li><strong>UX via Terminal:</strong> Uso de códigos <strong>ANSI</strong> para estilização de cores e formatação de texto (CLI), proporcionando uma interface de usuário mais intuitiva e atraente mesmo em ambiente de console.</li>
+                                <li  data-i18n="L1-python"><strong>Algoritmos e Lógica:</strong> Implementação de estruturas condicionais complexas e laços de repetição (<code>for</code>, <code>while</code>) para processamento de dados e controle de jogos.</li>
+                                <li data-i18n="L2-python"><strong>Modularização e Reutilização:</strong> Organização de funções em módulos externos (como o uso de <code>uteis.py</code>), demonstrando conhecimento em arquitetura de código limpo e organizado.</li>
+                                <li data-i18n="L3-python"><strong>Bibliotecas Nativas:</strong> Utilização de módulos built-in do Python, como o <code>random</code> para lógica de jogos e <code>time</code> para controle de fluxo e animações no terminal.</li>
+                                <li data-i18n="L4-python"><strong>UX via Terminal:</strong> Uso de códigos <strong>ANSI</strong> para estilização de cores e formatação de texto (CLI), proporcionando uma interface de usuário mais intuitiva e atraente mesmo em ambiente de console.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/python-studies" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório de Estudos</a>
+                                <a href="https://github.com/PedroRossZny/python-studies" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="repo-estudos">Repositório de Estudos</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias exploradas</h4>
+                            <h4 data-i18n="T3-python">Tecnologias exploradas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1094,36 +1032,39 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/html-css-icon.png" alt="Icon HTML & CSS" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Estudos de HTML5 & CSS3</h3>
-                                <p class="resumo">Formação prática em HTML5 e CSS3, da semântica e acessibilidade a layouts modernos responsivos.</p>
+                                <h3 class="titulo" data-i18n="titulo-html-css">Estudos de HTML5 & CSS3</h3>
+                                <p class="resumo" data-i18n="resumo-html-css">Formação prática em HTML5 e CSS3, da semântica e acessibilidade a layouts modernos responsivos.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre os Estudos</h4>
-                            <p>Este repositório é um hub de aprendizado contínuo que documenta a transição de um desenvolvedor iniciante para um profissional capaz de construir interfaces ricas. Ele contém uma vasta coleção de desafios práticos, cada um focado em resolver um problema específico de design ou estrutura web.</p>
-                            <p>Através de dezenas de exercícios, explorei desde a semântica pura até as camadas mais complexas de estilização, garantindo que cada página criada fosse não apenas visualmente atraente, mas também tecnicamente robusta e acessível.</p>
+                            <h4 data-i18n="T1-html-css">Sobre os Estudos</h4>
+                            <p data-i18n="P1-html-css">Este repositório é um hub de aprendizado contínuo que documenta a transição de um desenvolvedor iniciante para um profissional capaz de construir interfaces ricas. Ele contém uma vasta coleção de desafios práticos, cada um focado em resolver um problema específico de design ou estrutura web.</p>
+                            <p data-i18n="P2-html-css">Através de dezenas de exercícios, explorei desde a semântica pura até as camadas mais complexas de estilização, garantindo que cada página criada fosse não apenas visualmente atraente, mas também tecnicamente robusta e acessível.</p>
 
-                            <h4>Destaques Técnicos e Competências</h4>
-                            <p>A progressão neste repositório cobre o ecossistema completo do desenvolvimento Front-end essencial:</p>
+                            <h4 data-i18n="T2-html-css">Destaques Técnicos e Competências</h4>
+                            <p data-i18n="P3-html-css">A progressão neste repositório cobre o ecossistema completo do desenvolvimento Front-end essencial:</p>
 
                             <ul>
-                                <li><strong>Arquitetura Semântica:</strong> Aplicação rigorosa de tags HTML5 para estruturar conteúdos de forma lógica, otimizando a página para motores de busca (SEO) e tecnologias assistivas.</li>
-                                <li><strong>Sistemas de Layout Modernos:</strong> Implementação de designs responsivos utilizando **Flexbox** e **CSS Grid**, garantindo que as interfaces se adaptem com inteligência a qualquer tamanho de visor.</li>
-                                <li><strong>Tratamento de Mídia e Assets:</strong> Domínio sobre a incorporação de vídeos, áudios e sistemas de imagens flexíveis, além da gestão de ícones e fontes customizadas.</li>
-                                <li><strong>Formulários e Tabelas Complexas:</strong> Construção de estruturas de dados organizadas e campos de entrada de dados validados, com foco total na experiência do usuário (UX).</li>
-                                <li><strong>Estética e Interatividade:</strong> Uso de degradês (Gradients), sombreamentos dinâmicos, pseudo-classes e animações CSS para criar interfaces que respondem às ações do usuário.</li>
+                                <li data-i18n="L1-html-css"><strong>Arquitetura Semântica:</strong> Aplicação rigorosa de tags HTML5 para estruturar conteúdos de forma lógica, otimizando a página para motores de busca (SEO) e tecnologias assistivas.</li>
+                                <li data-i18n="L2-html-css"><strong>Sistemas de Layout Modernos:</strong> Implementação de designs responsivos utilizando **Flexbox** e **CSS Grid**, garantindo que as interfaces se adaptem com inteligência a qualquer tamanho de visor.</li>
+                                <li data-i18n="L3-html-css"><strong>Tratamento de Mídia e Assets:</strong> Domínio sobre a incorporação de vídeos, áudios e sistemas de imagens flexíveis, além da gestão de ícones e fontes customizadas.</li>
+                                <li data-i18n="L4-html-css"><strong>Formulários e Tabelas Complexas:</strong> Construção de estruturas de dados organizadas e campos de entrada de dados validados, com foco total na experiência do usuário (UX).</li>
+                                <li data-i18n="L5-html-css"><strong>Estética e Interatividade:</strong> Uso de degradês (Gradients), sombreamentos dinâmicos, pseudo-classes e animações CSS para criar interfaces que respondem às ações do usuário.</li>
                             </ul>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/html-css" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório de Estudos</a>
+                                <a href="https://github.com/PedroRossZny/html-css" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span  data-i18n="repo-estudos">Repositório de Estudos</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias exploradas</h4>
+                            <h4 data-i18n="T3-html-css">Tecnologias exploradas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>HTML5</li>
                                         <li>CSS3</li>
@@ -1146,24 +1087,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/sorteio-numeros-icon.png" alt="Icon Sorteador" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Sorteador Númerico</h3>
-                                <p class="resumo">Script em Python demonstrando funções, manipulação de listas e laços de repetição.</p>
+                                <h3 class="titulo" data-i18n="titulo-sorteador">Sorteador Númerico</h3>
+                                <p class="resumo" data-i18n="resumo-sorteador">Script em Python demonstrando funções, manipulação de listas e laços de repetição.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Sorteador Numérico</strong> é um script focado no conceito de modularização e manipulação de arrays. Ele demonstra a criação de funções isoladas com responsabilidades únicas: uma para gerar e armazenar valores pseudo-aleatórios e outra para iterar sobre a lista, filtrando e somando apenas os números pares.</p>
+                            <h4 data-i18n="T1-sorteador">Sobre o projeto</h4>
+                            <p data-i18n="P1-sorteador">O <strong>Sorteador Numérico</strong> é um script focado no conceito de modularização e manipulação de arrays. Ele demonstra a criação de funções isoladas com responsabilidades únicas: uma para gerar e armazenar valores pseudo-aleatórios e outra para iterar sobre a lista, filtrando e somando apenas os números pares.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/Functions" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/Functions" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-sorteador">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1185,24 +1129,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/jogador-icon.png" alt="Icon Gestão de Jogadores" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Gestão de Desempenho de Jogadores</h3>
-                                <p class="resumo">Sistema em Python para registrar jogadores e acompanhar partidas e gols via console.</p>
+                                <h3 class="titulo" data-i18n="titulo-gestao">Gestão de Desempenho de Jogadores</h3>
+                                <p class="resumo" data-i18n="resumo-gestao">Sistema em Python para registrar jogadores e acompanhar partidas e gols via console.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Gestão de Jogadores</strong> é uma aplicação de terminal construída para lidar com estruturas de dados compostas. O script utiliza listas e dicionários combinados para registrar dinamicamente o perfil de atletas, contabilizando as partidas jogadas e o desempenho em gols.</p>
+                            <h4 data-i18n="T1-gestao">Sobre o projeto</h4>
+                            <p data-i18n="P1-gestao">O <strong>Gestão de Jogadores</strong> é uma aplicação de terminal construída para lidar com estruturas de dados compostas. O script utiliza listas e dicionários combinados para registrar dinamicamente o perfil de atletas, contabilizando as partidas jogadas e o desempenho em gols.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/Use-of-Football-Players" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/Use-of-Football-Players" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-gestao">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1224,24 +1171,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/par-impar-icon.png" alt="Icon Par ou Ímpar" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Game: Par ou Ímpar</h3>
-                                <p class="resumo">Jogo de Par ou Ímpar em Python via terminal, com pontuação acumulada contra o computador.</p>
+                                <h3 class="titulo" data-i18n="titulo-par-impar">Game: Par ou Ímpar</h3>
+                                <p class="resumo" data-i18n="resumo-par-impar">Jogo de Par ou Ímpar em Python via terminal, com pontuação acumulada contra o computador.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Game: Par ou Ímpar</strong> simula o clássico jogo através de um loop contínuo (<code>while True</code>) que só é interrompido quando o jogador perde. O algoritmo desafia a máquina, utilizando operações aritméticas de módulo (<code>%</code>) para definir o resultado das rodadas em tempo real.</p>
+                            <h4 data-i18n="T1-par-impar">Sobre o projeto</h4>
+                            <p data-i18n="P1-par-impar">O <strong>Game: Par ou Ímpar</strong> simula o clássico jogo através de um loop contínuo (<code>while True</code>) que só é interrompido quando o jogador perde. O algoritmo desafia a máquina, utilizando operações aritméticas de módulo (<code>%</code>) para definir o resultado das rodadas em tempo real.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/Even-or-Odd" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/Even-or-Odd" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-par-impar">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1263,24 +1213,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/atm-icon.png" alt="Icon ATM" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Sistema de ATM</h3>
-                                <p class="resumo">Algoritmo em Python que calcula a menor quantidade de cédulas para um saque em dinheiro.</p>
+                                <h3 class="titulo" data-i18n="titulo-atm">Sistema de ATM</h3>
+                                <p class="resumo" data-i18n="resumo-atm">Algoritmo em Python que calcula a menor quantidade de cédulas para um saque em dinheiro.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Sistema de ATM</strong> é uma resolução clássica de problemas de matemática discreta. O algoritmo calcula de forma gulosa (Greedy Algorithm) a menor quantidade de notas necessárias para compor um valor de saque, priorizando sempre as cédulas de maior valor disponíveis.</p>
+                            <h4 data-i18n="T1-atm">Sobre o projeto</h4>
+                            <p data-i18n="P1-atm">O <strong>Sistema de ATM</strong> é uma resolução clássica de problemas de matemática discreta. O algoritmo calcula de forma gulosa (Greedy Algorithm) a menor quantidade de notas necessárias para compor um valor de saque, priorizando sempre as cédulas de maior valor disponíveis.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/ATM-Simulator" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/ATM-Simulator" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-atm">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1302,24 +1255,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/multa-icon.png" alt="Icon Monitoramento e Calculo de Multas" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Monitoramento e Cálculo de Multas</h3>
-                                <p class="resumo">Aplicação em Python que simula um radar de trânsito e calcula multas por excesso de velocidade.</p>
+                                <h3 class="titulo" data-i18n="titulo-multa">Monitoramento e Cálculo de Multas</h3>
+                                <p class="resumo" data-i18n="resumo-multa">Aplicação em Python que simula um radar de trânsito e calcula multas por excesso de velocidade.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Cálculo de Multas</strong> é uma aplicação de estrutura condicional direta que simula a lógica de um radar de trânsito. O sistema avalia a velocidade registrada e, em caso de infração, gera automaticamente o valor financeiro da multa baseando-se em uma fórmula de acréscimo proporcional.</p>
+                            <h4 data-i18n="T1-multa">Sobre o projeto</h4>
+                            <p data-i18n="P1-multa">O <strong>Cálculo de Multas</strong> é uma aplicação de estrutura condicional direta que simula a lógica de um radar de trânsito. O sistema avalia a velocidade registrada e, em caso de infração, gera automaticamente o valor financeiro da multa baseando-se em uma fórmula de acréscimo proporcional.</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/Speeding-Fine-Calculation-Python" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/Speeding-Fine-Calculation-Python" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-multa">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1341,24 +1297,27 @@
                         <div class="projeto-resumo-container">
                             <img src="images/icons/adivinha-icon.png" alt="Icon Adivinhação Algorítmica" class="icone-projeto">
                             <div class="textos-iniciais">
-                                <h3 class="titulo">Jogo de Adivinhação Algorítmica</h3>
-                                <p class="resumo">Jogo em Python onde o usuário tenta adivinhar um número entre 0 e 5 escolhido pela máquina.</p>
+                                <h3 class="titulo" data-i18n="titulo-adivinha">Jogo de Adivinhação Algorítmica</h3>
+                                <p class="resumo" data-i18n="resumo-adivinha">Jogo em Python onde o usuário tenta adivinhar um número entre 0 e 5 escolhido pela máquina.</p>
                             </div>
                         </div>
 
                         <div class="projeto-especificacoes">
-                            <h4>Sobre o projeto</h4>
-                            <p>O <strong>Jogo de Adivinhação</strong> é uma interação via console que utiliza a biblioteca nativa para geração de números aleatórios. O script oculta o número escolhido pela máquina e valida o palpite do usuário, entregando feedback imediato (Win/Loss condition).</p>
+                            <h4 data-i18n="T1-adivinha">Sobre o projeto</h4>
+                            <p data-i18n="P1-adivinha">O <strong>Jogo de Adivinhação</strong> é uma interação via console que utiliza a biblioteca nativa para geração de números aleatórios. O script oculta o número escolhido pela máquina e valida o palpite do usuário, entregando feedback imediato (Win/Loss condition).</p>
 
                             <div class="links">
-                                <a href="https://github.com/PedroRossZny/Guessing-Game-Python" target="_blank" class="botao-link github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a>
+                                <a href="https://github.com/PedroRossZny/Guessing-Game-Python" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo">Repositório no GitHub</span>
+                                </a>
                             </div>
 
-                            <h4>Tecnologias utilizadas</h4>
+                            <h4 data-i18n="T2-adivinha">Tecnologias utilizadas</h4>
 
                             <div class="tech-grid">
                                 <div class="tech-category">
-                                    <h5>Linguagem</h5>
+                                    <h5 data-i18n="linguagem">Linguagem</h5>
                                     <ul>
                                         <li>Python</li>
                                     </ul>
@@ -1371,25 +1330,34 @@
 
             <!-- Formação -->
             <article id="formacao">
-                <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+                <h2>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span data-i18n="formacao">Formação</span>
+                </h2>
                 <div id="formacao-container">
                     <div class="curso">
                         <p class="periodo">2023 - 2026</p>
                         <h3 class="instituicao">UNIFRAN</h3>
-                        <p class="titulacao">Bacharelado em Ciência da Computação</p>
+                        <p class="titulacao" data-i18n="curso">Bacharelado em Ciência da Computação</p>
                     </div>
                 </div>
             </article>
-            
+
         </section>
 
     </main>
 
     <!-- Rodapé -->
     <footer class="rodape-discreto">
-        <p>Desenvolvido por <a href="https://github.com/PedroRossZny" target="_blank" rel="nofollow">Pedro Ross</a> &copy; 2025</p>
+        <p>
+            <span data-i18n="por">Desenvolvido por </span>
+            <a href="https://github.com/PedroRossZny" target="_blank" rel="nofollow">Pedro Ross</a>
+             &copy; 2025
+        </p>
     </footer>
 
+    <script src="scripts/translations.js"></script>
     <script src="scripts/script.js"></script>
+
 </body>
 </html>

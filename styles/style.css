@@ -6,7 +6,7 @@
 
 /* Novas variáveis mais modernas e equilibradas */
 :root {
-    --fundo-principal: #d8dbe2;
+    --fundo-principal: #ced1d8;
     --fundo-card: #ebebf0;
     --texto: #1f2937;
     --texto-inverso: #ffffff;
@@ -17,10 +17,10 @@
 }
 
 body.escuro {
-    --fundo-principal: #111827;
-    --fundo-card: #1f2937;
+    --fundo-principal: #0c111b;
+    --fundo-card: #171e29;
     --texto: #f9fafb;
-    --texto-inverso: #111827;
+    --texto-inverso: #0b101a;
     --texto-mutado: #9ca3af;
     --destaque: #3b82f6;
     --destaque-hover: #60a5fa;
@@ -148,8 +148,8 @@ body {
     z-index: -1;
     pointer-events: none;
     background-image: 
-        linear-gradient(to right, var(--borda) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--borda) 1px, transparent 1px);
+        linear-gradient(to right, var(--borda) 2px, transparent 1px),
+        linear-gradient(to bottom, var(--borda) 2px, transparent 1px);
     background-size: 50px 50px;
     opacity: 0.3;
     mask-image: radial-gradient(circle 400px at var(--mouse-x, 50%) var(--mouse-y, 50%), black 0%, transparent 100%);
