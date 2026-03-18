@@ -504,7 +504,9 @@ const translations = {
         
         "por": "Desenvolvido por ",
 
-        "limpar_filtro_tooltip": "Limpar Filtro"
+        "limpar_filtro_tooltip": "Limpar Filtro",
+
+        "expandir_recolher_btn": "Expandir/Recolher"
     },
     en: {
         "perfil-descricao": "Full-Stack Developer (Mobile & Web), focused on Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL, and REST API development. Currently working as a freelancer, creating custom web and mobile projects.",
@@ -1011,6 +1013,8 @@ const translations = {
 
         "por": "Developed by ",
 
-        "limpar_filtro_tooltip": "Clear Filter"
+        "limpar_filtro_tooltip": "Clear Filter",
+
+        "expandir_recolher_btn": "Expand/Collapse"
     }
 };
