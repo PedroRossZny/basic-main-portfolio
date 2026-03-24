@@ -4,8 +4,24 @@
     box-sizing: border-box;
 }
 
+/* --- Importação das Fontes Locais --- */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Novas variáveis mais modernas e equilibradas */
 :root {
+    /* Variáveis de Cores */
     --fundo-principal: #ced1d8;
     --fundo-card: #ebebf0;
     --texto: #1f2937;
@@ -14,6 +30,10 @@
     --destaque: #2563eb; 
     --destaque-hover: #1d4ed8;
     --borda: #a8acb4;
+
+    /* Variáveis de Fontes */
+    --fonte-textos: 'Inter', sans-serif;
+    --fonte-titulos: 'Poppins', sans-serif;
 }
 
 body.escuro {
@@ -28,12 +48,18 @@ body.escuro {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-textos);
     line-height: 1.6em;
     background-color: var(--fundo-principal);
     color: var(--texto);
     overflow: hidden;
     transition: background-color 0.4s, color 0.4s;
+}
+
+/* Aplica a fonte Poppins em todos os títulos do projeto */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-titulos);
+    font-weight: 600;
 }
 
 /* Loader Personalizado */
@@ -279,11 +305,13 @@ article h2 {
 }
 
 .tech-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     background-color: var(--fundo-principal);
     border: 1px solid var(--borda);
     border-radius: 12px;
     padding: 15px 20px;
-    gap: 15px;
     transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -341,7 +369,7 @@ article h2 {
 #filtro-ativo {
     font-size: 0.9rem;
     font-weight: normal;
-    color: var(--cor-secundaria);
+    color: var(--texto-mutado);
     margin-left: 8px;
 }
 
@@ -358,10 +386,10 @@ article h2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: all 0.4s ease, opacity 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.titulo-projetos{
+.titulo-projetos {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -588,7 +616,7 @@ article#projetos h2 {
     margin-bottom: 20px;
 }
 
-.video-container{
+.video-container {
     float: right;
     width: 420px;
     margin-left: 25px;
@@ -603,7 +631,6 @@ article#projetos h2 {
 }
 
 /* Download de Documentos (Layout Flexível) */
-
 .download-doc {
     display: flex;
     gap: 18px;
@@ -615,17 +642,17 @@ article#projetos h2 {
     border: 1px solid rgba(255,255,255,0.08);
 }
 
-.download-icon{
+.download-icon {
     font-size: 2.2rem;
     color: #ff4d4d;
 }
 
-.download-title{
+.download-title {
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-.download-button{
+.download-button {
     display: inline-block;
     margin-top: 8px;
     padding: 8px 14px;
@@ -637,40 +664,39 @@ article#projetos h2 {
     transition: 0.2s;
 }
 
-.download-button:hover{
+.download-button:hover {
     background: #2f7cff;
     transform: translateY(-2px);
 }
 
 /* Tecnologias (Layout em Grid) */
-
-.tech-grid{
+.tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     gap: 10px;
     margin: 20px 0;
 }
 
-.tech-category{
+.tech-category {
     background: rgba(255,255,255,0.04);
     padding: 12px;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.08);
 }
 
-.tech-category h5{
+.tech-category h5 {
     margin-bottom: 8px;
     font-size: 0.95rem;
     font-weight: 600;
 }
 
-.tech-category ul{
+.tech-category ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.tech-category li{
+.tech-category li {
     font-size: 0.9rem;
     opacity: 0.85;
     margin-bottom: 4px;

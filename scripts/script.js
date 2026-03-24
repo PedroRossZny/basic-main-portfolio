@@ -186,7 +186,6 @@ function limparFiltros() {
     }
 }
 
-
 // Evento do botão limpar
 if (btnLimpar) {
     btnLimpar.addEventListener('click', limparFiltros);
