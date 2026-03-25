@@ -219,11 +219,6 @@ nav#menu a {
     transition: all 0.3s;
 }
 
-nav#menu a:hover {
-    background-color: var(--destaque);
-    color: var(--texto-inverso);
-}
-
 /* Estrutura Principal com o scroll independente restaurado */
 main {
     display: grid;
@@ -285,11 +280,6 @@ div.social a {
     transition: color 0.3s, transform 0.3s;
 }
 
-div.social a:hover {
-    color: var(--destaque);
-    transform: translateY(-3px);
-}
-
 article h2 {
     color: var(--destaque);
     margin-bottom: 25px;
@@ -313,12 +303,6 @@ article h2 {
     border-radius: 12px;
     padding: 15px 20px;
     transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
-
-.tech-group:hover {
-    transform: translateY(-5px);
-    border-color: var(--destaque);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
 }
 
 .tech-group h3 {
@@ -349,12 +333,7 @@ article h2 {
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s;
-}
-
-.tech-btn:hover {
-    border-color: var(--destaque);
-    color: var(--destaque);
-    background-color: var(--fundo-card);
+    cursor: pointer;
 }
 
 /* Formação */
@@ -406,11 +385,6 @@ article h2 {
     transition: all 0.25s ease;
 }
 
-#limpar-filtro:hover {
-    color: #ef4444;
-    transform: scale(1.15);
-}
-
 /* Ajuste no título para alinhar o botão */
 article#projetos h2 {
     display: flex;
@@ -442,11 +416,6 @@ article#projetos h2 {
     font-size: 1.3em;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
-}
-
-.btn-expandir:hover {
-    color: var(--destaque);
-    transform: scale(1.1);
 }
 
 /* Wrapper da Imagem para animar o desaparecimento */
@@ -579,13 +548,7 @@ article#projetos h2 {
     font-size: 1.2em;
 }
 
-.botao-link:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
-}
-
 /* cores oficiais */
-
 .youtube {
     background: #ff0000;
 }
@@ -611,7 +574,6 @@ article#projetos h2 {
 }
 
 /* Seção de Vídeos (Layout Flexível) */
-
 .secao-video {
     margin-bottom: 20px;
 }
@@ -662,11 +624,6 @@ article#projetos h2 {
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.2s;
-}
-
-.download-button:hover {
-    background: #2f7cff;
-    transform: translateY(-2px);
 }
 
 /* Tecnologias (Layout em Grid) */
@@ -731,10 +688,6 @@ article#projetos h2 {
     transition: opacity 0.2s;
 }
 
-.btn-interativo:hover {
-    opacity: 0.9;
-}
-
 .resultado-logica {
     margin-top: 10px;
     font-family: monospace;
@@ -769,10 +722,6 @@ article#projetos h2 {
     margin-left: 4px;
 }
 
-.rodape-discreto a:hover {
-    text-decoration: underline;
-}
-
 /* Customização da Barra de Rolagem Interna */
 ::-webkit-scrollbar {
     width: 8px;
@@ -784,16 +733,8 @@ article#projetos h2 {
     background: var(--borda);
     border-radius: 4px;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: var(--texto-mutado);
-}
 
-/* Lógica visual do Filtro */
-.tech-btn {
-    cursor: pointer;
-}
-
-/* Quando o botão está selecionado */
+/* Quando o botão de filtro está selecionado */
 .tech-btn.ativo {
     background-color: var(--destaque) !important;
     color: var(--texto-inverso) !important;
@@ -807,14 +748,82 @@ article#projetos h2 {
     display: none !important;
 }
 
+/* Efeitos de hover apenas com mouse */
+@media (hover: hover) {
+    nav#menu a:hover {
+        background-color: var(--destaque);
+        color: var(--texto-inverso);
+    }
+
+    div.social a:hover {
+        color: var(--destaque);
+        transform: translateY(-3px);
+    }
+
+    .tech-group:hover {
+        transform: translateY(-5px);
+        border-color: var(--destaque);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .tech-btn:hover {
+        border-color: var(--destaque);
+        color: var(--destaque);
+        background-color: var(--fundo-card);
+    }
+
+    #limpar-filtro:hover {
+        color: #ef4444;
+        transform: scale(1.15);
+    }
+
+    .btn-expandir:hover {
+        color: var(--destaque);
+        transform: scale(1.1);
+    }
+
+    .botao-link:hover {
+        transform: translateY(-3px);
+        opacity: 0.9;
+    }
+
+    .download-button:hover {
+        background: #2f7cff;
+        transform: translateY(-2px);
+    }
+
+    .btn-interativo:hover {
+        opacity: 0.9;
+    }
+
+    .rodape-discreto a:hover {
+        text-decoration: underline;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--texto-mutado);
+    }
+}
+
+/* Feedback de clique */
+nav#menu a:active,
+.tech-btn:active,
+.botao-link:active,
+.download-button:active,
+.btn-expandir:active,
+.btn-interativo:active,
+div.social a:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+    transition: transform 0.1s, opacity 0.1s;
+}
+
 /* Responsividade 1050px */
 @media (max-width: 1050px) {
-    /* Libera a rolagem do corpo da página (scroll normal de celular) */
     body {
         overflow-y: auto;
     }
 
-    /* Centraliza as opções do menu no cabeçalho */
     header {
         justify-content: center;
         padding: 10px;
@@ -825,26 +834,22 @@ article#projetos h2 {
         flex-wrap: wrap;
     }
 
-    /* Coloca a Ficha e os Detalhes um embaixo do outro */
     main {
-        grid-template-columns: 1fr; 
-        height: auto; 
-        gap: 15px; 
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 15px;
     }
 
-    /* Desativa a rolagem interna das seções e permite que cresçam naturalmente */
     section#ficha, section#detalhes {
         overflow-y: visible;
         padding-right: 0;
     }
 
-    /* Ajusta o card da Ficha para não ficar tão "esticado" horizontalmente */
     section#ficha > article {
-        text-align: center; /* Centraliza os textos da sua ficha */
+        text-align: center;
         margin-bottom: 0;
     }
 
-    /* Ajusta o botão de download para não ficar quebrado caso a tela seja muito estreita */
     .download-doc {
         flex-direction: column;
         text-align: center;
@@ -854,13 +859,10 @@ article#projetos h2 {
 
 /* Responsividade 768px */
 @media (max-width: 768px) {
-
-    /* Icone do projeto desaparece */
     .projeto.expandido .icone-projeto {
         display: none;
     }
 
-    /* Remove o float:right e a largura fixa de 420px para não quebrar a tela do celular */
     .video-container {
         float: none;
         width: 100%;
@@ -871,5 +873,4 @@ article#projetos h2 {
     .video-container iframe {
         height: 220px;
     }
-    
 }
