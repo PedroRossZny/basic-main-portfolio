@@ -8,7 +8,6 @@ if (temaSalvo === 'escuro') {
 function esconderLoader() {
     const loader = document.getElementById('loader');
     if (loader && !loader.classList.contains('oculto')) {
-        // Mantive o seu tempo de 1.5s para apreciação da animação
         setTimeout(() => {
             loader.classList.add('oculto');
         }, 1500);
@@ -79,11 +78,11 @@ navLinks.forEach(link => {
             const detalhesSection = document.getElementById('detalhes');
 
             if (targetElement) {
-                // DECISÃO DE RESPONSIVIDADE:
+                // RESPONSIVIDADE:
                 if (window.innerWidth <= 1050) {
                     // MOBILE: A página inteira (window) faz o scroll
                     const header = document.querySelector('header');
-                    const headerHeight = header ? header.offsetHeight : 0; // Altura do menu
+                    const headerHeight = header ? header.offsetHeight : 0;
                     
                     // Calcula a posição real do elemento na página inteira
                     const posicaoElemento = targetElement.getBoundingClientRect().top + window.scrollY;
@@ -109,7 +108,7 @@ navLinks.forEach(link => {
 let ordemExpandido = -1000;
 const botoesExpandir = document.querySelectorAll('.btn-expandir');
 
-// Captura a seção correta que tem a barra de rolagem no seu layout
+// Captura a seção correta
 const secaoDetalhes = document.getElementById('detalhes'); 
 
 botoesExpandir.forEach(botao => {
@@ -118,11 +117,11 @@ botoesExpandir.forEach(botao => {
         const icone = this.querySelector('i');
         const vaiExpandir = !projeto.classList.contains('expandido');
 
-        // Animação de "preparação" (o card dá uma leve encolhida e fica transparente antes de se mover)
+        // Animação de preparação
         projeto.style.opacity = '0.3';
         projeto.style.transform = 'scale(0.95)';
 
-        // Esperamos 150 milissegundos para realizar a troca de lugar "escondida"
+        // Troca de lugar
         setTimeout(() => {
             if (vaiExpandir) {
                 projeto.classList.add('expandido');
@@ -141,20 +140,20 @@ botoesExpandir.forEach(botao => {
 
             // Scroll preciso para o TOPO do projeto
             if (vaiExpandir) {
-                // Outro pequeno timeout de 50ms para garantir que o navegador já renderizou o novo tamanho do CSS
+                // Pequeno timeout de 50ms para garantir que o navegador já renderizou o novo tamanho
                 setTimeout(() => {
                     
                     if (window.innerWidth <= 1050) {
-                        // Comportamento Mobile: O scroll pertence à janela inteira (window)
+                        // MOBILE: O scroll pertence à janela inteira (window)
                         const headerHeight = document.querySelector('header').offsetHeight;
                         const posicaoProjeto = projeto.getBoundingClientRect().top + window.scrollY;
                         
                         window.scrollTo({
-                            top: posicaoProjeto - headerHeight - 15, // Desconta o header para não cobrir o título
+                            top: posicaoProjeto - headerHeight - 15,
                             behavior: 'smooth'
                         });
                     } else {
-                        // Comportamento Desktop: O scroll pertence à section#detalhes
+                        // DESKTOP: O scroll pertence à section#detalhes
                         secaoDetalhes.scrollTo({
                             top: projeto.offsetTop - 20, 
                             behavior: 'smooth' 
@@ -239,6 +238,20 @@ const botaoLingua = document.getElementById('botao-lingua');
 // Define português como padrão se não houver nada salvo
 let idiomaAtual = localStorage.getItem('idioma') || 'pt';
 
+// Aplica a tradução logo que a página carrega
+aplicarTraducao(idiomaAtual);
+
+// Evento de clique no botão
+botaoLingua.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Alterna o idioma
+    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
+    // Salva a preferência do usuário
+    localStorage.setItem('idioma', idiomaAtual);
+    // Aplica a nova tradução
+    aplicarTraducao(idiomaAtual);
+});
+
 // Função que atualiza os textos na tela
 function aplicarTraducao(idioma) {
     document.documentElement.lang = (idioma === 'pt') ? 'pt-br' : 'en';
@@ -261,17 +274,3 @@ function aplicarTraducao(idioma) {
         }
     });
 }
-
-// Aplica a tradução logo que a página carrega
-aplicarTraducao(idiomaAtual);
-
-// Evento de clique no botão
-botaoLingua.addEventListener('click', (e) => {
-    e.preventDefault();
-    // Alterna o idioma
-    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
-    // Salva a preferência do usuário
-    localStorage.setItem('idioma', idiomaAtual);
-    // Aplica a nova tradução
-    aplicarTraducao(idiomaAtual);
-});

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* --- Importação das Fontes Locais --- */
+/* Importação das Fontes Locais */
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter-Regular.ttf') format('truetype');
@@ -19,7 +19,7 @@
     font-style: normal;
 }
 
-/* Novas variáveis mais modernas e equilibradas */
+/* Variáveis */
 :root {
     /* Variáveis de Cores */
     --fundo-principal: #ced1d8;
@@ -257,12 +257,14 @@ section#ficha img.perfil {
 }
 
 section#ficha h1 {
+    text-align: center;
     color: var(--destaque);
     font-size: 1.4em;
     margin-bottom: 8px;
 }
 
 section#ficha p {
+    text-align: center;
     font-size: 0.85em;
     margin-bottom: 6px;
 }
@@ -657,47 +659,6 @@ article#projetos h2 {
     font-size: 0.9rem;
     opacity: 0.85;
     margin-bottom: 4px;
-}
-
-/* Estilização da área interativa dos projetos */
-.divisor-interativo {
-    border: 1px solid var(--borda);
-    margin: 20px 0;
-}
-
-.demo-container {
-    background: var(--fundo-principal);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid var(--borda);
-}
-
-.demo-descricao {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-.btn-interativo {
-    padding: 8px 15px;
-    cursor: pointer;
-    background: var(--destaque);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: opacity 0.2s;
-}
-
-.resultado-logica {
-    margin-top: 10px;
-    font-family: monospace;
-    color: var(--texto);
-    line-height: 1.5;
-}
-
-.destaque-resultado {
-    color: var(--destaque);
-    font-weight: bold;
 }
 
 /* Rodapé Discreto */
