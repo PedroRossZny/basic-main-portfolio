@@ -238,20 +238,6 @@ const botaoLingua = document.getElementById('botao-lingua');
 // Define português como padrão se não houver nada salvo
 let idiomaAtual = localStorage.getItem('idioma') || 'pt';
 
-// Aplica a tradução logo que a página carrega
-aplicarTraducao(idiomaAtual);
-
-// Evento de clique no botão
-botaoLingua.addEventListener('click', (e) => {
-    e.preventDefault();
-    // Alterna o idioma
-    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
-    // Salva a preferência do usuário
-    localStorage.setItem('idioma', idiomaAtual);
-    // Aplica a nova tradução
-    aplicarTraducao(idiomaAtual);
-});
-
 // Função que atualiza os textos na tela
 function aplicarTraducao(idioma) {
     document.documentElement.lang = (idioma === 'pt') ? 'pt-br' : 'en';
@@ -274,3 +260,17 @@ function aplicarTraducao(idioma) {
         }
     });
 }
+
+// Aplica a tradução logo que a página carrega
+aplicarTraducao(idiomaAtual);
+
+// Evento de clique no botão
+botaoLingua.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Alterna o idioma
+    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
+    // Salva a preferência do usuário
+    localStorage.setItem('idioma', idiomaAtual);
+    // Aplica a nova tradução
+    aplicarTraducao(idiomaAtual);
+});
