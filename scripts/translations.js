@@ -480,7 +480,7 @@ const translations = {
 
         "titulo-multa": "Monitoramento e Cálculo de Multas",
 
-        "resumo-multa": "O <strong>Cálculo de Multas</strong> é uma aplicação de estrutura condicional direta que simula a lógica de um radar de trânsito. O sistema avalia a velocidade registrada e, em caso de infração, gera automaticamente o valor financeiro da multa baseando-se em uma fórmula de acréscimo proporcional.",
+        "resumo-multa": "Aplicação em Python que simula um radar de trânsito e calcula multas por excesso de velocidade.",
 
         "T1-multa": "Sobre o projeto",
 
@@ -989,7 +989,7 @@ const translations = {
 
         "titulo-multa": "Fine Monitoring and Calculation",
 
-        "resumo-multa": "The <strong>Fine Calculation</strong> is a direct conditional structure application that simulates a traffic radar system. It evaluates recorded speed and, in case of violation, automatically calculates the fine amount based on a proportional increase formula.",
+        "resumo-multa": "Python application that simulates a traffic radar and calculates fines for speeding.",
 
         "T1-multa": "About the project",
 
