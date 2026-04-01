@@ -148,7 +148,7 @@ const translations = {
 
         "T3-ambiente": "Controle de emissões de carbono",
 
-        "P6-ambitente": "Além do registro de ações sustentáveis, o aplicativo também possui um sistema simples de acompanhamento de emissões de carbono. O usuário pode registrar atividades relacionadas ao transporte ou ao uso de eletrônicos e visualizar estimativas de emissão de CO₂ associadas a essas ações.",
+        "P6-ambiente": "Além do registro de ações sustentáveis, o aplicativo também possui um sistema simples de acompanhamento de emissões de carbono. O usuário pode registrar atividades relacionadas ao transporte ou ao uso de eletrônicos e visualizar estimativas de emissão de CO₂ associadas a essas ações.",
 
         "P7-ambiente": "A aplicação também disponibiliza um pequeno cálculo de impacto ambiental, onde o usuário pode inserir informações como distância percorrida de carro ou tempo de uso de dispositivos eletrônicos, permitindo gerar uma estimativa aproximada da emissão de carbono.",
 
@@ -506,7 +506,50 @@ const translations = {
 
         "limpar_filtro_tooltip": "Limpar Filtro",
 
-        "expandir_recolher_btn": "Expandir/Recolher"
+        "expandir_recolher_btn": "Expandir/Recolher",
+
+        "titulo-portfolio-eco": "Plataforma de Portfólio (Ecossistema)",
+
+        "resumo-portfolio-eco": "A evolução da minha plataforma de apresentação pessoal, de Vanilla JS até Next.js com TypeScript e Tailwind CSS.",
+
+        "T1-portfolio-eco": "Sobre o ecossistema",
+
+        "P1-portfolio-eco": "Este projeto é o reflexo direto da minha evolução técnica. Ele é composto por três repositórios distintos que representam diferentes fases do meu desenvolvimento Front-End.",
+
+        "T2-portfolio-eco": "1. Portfólio Avançado (Next.js & React) — Versão Atual",
+
+        "P2-portfolio-eco": "A versão definitiva, construída com foco absoluto em performance, SEO e componentização inteligente.",
+
+        "L1-portfolio-eco": "<strong>Stack Moderna:</strong> Desenvolvido utilizando o framework Next.js, React e tipagem estática com TypeScript para maior segurança.",
+
+        "L2-portfolio-eco": "<strong>Estilização e Animações:</strong> Uso intensivo de Tailwind CSS para estilização utilitária rápida e Framer Motion para orquestrar transições complexas.",
+
+        "L3-portfolio-eco": "<strong>Gerenciamento Global:</strong> Implementação nativa da Context API e do useSyncExternalStore para controle de Internacionalização (i18n) e integração com next-themes para o Dark/Light Mode.",
+
+        "T3-portfolio-eco": "2. Portfólio Principal (Vanilla JS)",
+
+        "P3-portfolio-eco": "A versão raiz que estabeleceu toda a identidade visual, lógica de filtros e responsividade sem a dependência de frameworks ou bibliotecas externas.",
+
+        "L4-portfolio-eco": "Manipulação avançada de DOM para criação de um sistema de filtros dinâmicos de tecnologias.",
+
+        "L5-portfolio-eco": "Lógica de internacionalização e alternância de temas desenvolvidas do zero com JavaScript puro e persistidas via localStorage.",
+
+        "L6-portfolio-eco": "Animações desenhadas via @keyframes, englobando o loader customizado e um fundo interativo com máscara de luz guiada pelo cursor.",
+
+        "T4-portfolio-eco": "3. Portfólio Base (Template Open-Source)",
+
+        "P4-portfolio-eco": "Uma refatoração da versão Vanilla criada especificamente para ser um template reutilizável para a comunidade.",
+
+        "L7-portfolio-eco": "Código limpo, estruturado e pronto para que outros desenvolvedores possam clonar, customizar com seus próprios dados e implantar rapidamente um portfólio interativo de alto nível.",
+
+        "github-repo-next": "Versão Next.js",
+
+        "github-repo-vanilla": "Versão Vanilla",
+
+        "github-repo-template": "Template Base",
+
+        "T5-portfolio-eco": "Tecnologias utilizadas"
+
     },
     en: {
         "perfil-descricao": "Full-Stack Developer (Mobile & Web), focused on Nest.js, Next.js, React Native, React, Node.js, Python, PostgreSQL, and REST API development. Currently working as a freelancer, creating custom web and mobile projects.",
@@ -657,7 +700,7 @@ const translations = {
 
         "T3-ambiente": "Carbon emissions tracking",
 
-        "P6-ambitente": "In addition to tracking sustainable actions, the application also includes a simple carbon emissions monitoring system. Users can record activities related to transportation or electronic device usage and view estimated CO₂ emissions associated with those actions.",
+        "P6-ambiente": "In addition to tracking sustainable actions, the application also includes a simple carbon emissions monitoring system. Users can record activities related to transportation or electronic device usage and view estimated CO₂ emissions associated with those actions.",
 
         "P7-ambiente": "The application also provides a small environmental impact calculator where users can enter information such as distance traveled by car or time spent using electronic devices, generating an approximate estimate of carbon emissions.",
 
@@ -766,6 +809,48 @@ const translations = {
         "L4-portfolio": "<strong>Interactivity and Styling:</strong> Use of CSS variables to simplify color management, along with transition animations and smooth scrolling for a more fluid navigation experience.",
 
         "T3-portfolio": "Technologies used",
+
+        "titulo-portfolio-eco": "Portfolio Platform (Ecosystem)",
+
+        "resumo-portfolio-eco": "The evolution of my personal presentation platform, from Vanilla JS to Next.js with TypeScript and Tailwind CSS.",
+
+        "T1-portfolio-eco": "About the ecosystem",
+
+        "P1-portfolio-eco": "This project is a direct reflection of my technical evolution. It is composed of three distinct repositories that represent different stages of my Front-End development.",
+
+        "T2-portfolio-eco": "1. Advanced Portfolio (Next.js & React) — Current Version",
+
+        "P2-portfolio-eco": "The definitive version, built with an absolute focus on performance, SEO, and smart componentization.",
+
+        "L1-portfolio-eco": "<strong>Modern Stack:</strong> Built with Next.js, React, and static typing via TypeScript for stronger type safety.",
+
+        "L2-portfolio-eco": "<strong>Styling and Animations:</strong> Extensive use of Tailwind CSS for rapid utility-first styling and Framer Motion to orchestrate complex transitions.",
+
+        "L3-portfolio-eco": "<strong>Global Management:</strong> Native implementation of the Context API and useSyncExternalStore to handle Internationalization (i18n), plus integration with next-themes for Dark/Light Mode.",
+
+        "T3-portfolio-eco": "2. Main Portfolio (Vanilla JS)",
+
+        "P3-portfolio-eco": "The foundational version that established the entire visual identity, filtering logic, and responsiveness without relying on external frameworks or libraries.",
+
+        "L4-portfolio-eco": "Advanced DOM manipulation to create a dynamic technology filter system.",
+
+        "L5-portfolio-eco": "Internationalization and theme-switching logic built from scratch with pure JavaScript and persisted via localStorage.",
+
+        "L6-portfolio-eco": "Animations created with @keyframes, including the custom loader and an interactive background with a cursor-guided light mask.",
+
+        "T4-portfolio-eco": "3. Base Portfolio (Open-Source Template)",
+
+        "P4-portfolio-eco": "A refactor of the Vanilla version created specifically to serve as a reusable template for the community.",
+
+        "L7-portfolio-eco": "Clean, structured code ready for other developers to clone, customize with their own data, and quickly deploy a high-quality interactive portfolio.",
+
+        "github-repo-next": "Next.js Version",
+
+        "github-repo-vanilla": "Vanilla Version",
+
+        "github-repo-template": "Base Template",
+
+        "T5-portfolio-eco": "Technologies used",
 
         "titulo-login": "Login Screen",
 

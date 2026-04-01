@@ -207,8 +207,10 @@ techBtns.forEach(btn => {
             techBtns.forEach(b => b.classList.remove('ativo'));
             this.classList.add('ativo');
             projetos.forEach(p => {
-
-                const techsDoProjeto = p.getAttribute('data-tech') || "";
+                // Compara por token exato para evitar colisões como "react" x "reactnative"
+                const techsDoProjeto = (p.getAttribute('data-tech') || "")
+                    .split(/\s+/)
+                    .filter(Boolean);
 
                 if (techsDoProjeto.includes(filtro)) {
                     p.classList.remove('oculto');

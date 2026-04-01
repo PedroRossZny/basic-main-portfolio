@@ -76,6 +76,7 @@
                             <div class="tech-btn" data-filter="html5"><i class="devicon-html5-plain"></i> HTML5</div>
                             <div class="tech-btn" data-filter="css3"><i class="devicon-css3-plain"></i> CSS3</div>
                             <div class="tech-btn" data-filter="javascript"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="tech-btn" data-filter="react"><i class="devicon-react-original"></i> React</div>
                             <div class="tech-btn" data-filter="nextjs"><i class="devicon-nextjs-plain"></i> Next.js</div>
                             <div class="tech-btn" data-filter="typescript"><i class="devicon-typescript-plain"></i> TypeScript</div>
                             <div class="tech-btn" data-filter="reactnative"><i class="devicon-reactnative-original"></i> React Native</div>
@@ -173,8 +174,92 @@
                         </div>
                     </div>
 
+                    <!-- PROJETO ECOSSISTEMA PORTFÓLIO -->
+                    <div class="projeto" data-tech="html5 css3 javascript react typescript nextjs tailwindcss git github">
+                        <div class="projeto-controle">
+                            <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <div class="projeto-imagem-wrapper">
+                            <img src="images/projects/portfolio-ecosystem-project.png" alt="Projeto Ecossistema Portfólio" class="foto-projeto">
+                        </div>
+
+                        <div class="projeto-resumo-container">
+                            <img src="images/icons/portfolio-ecosystem-icon.png" alt="Icon Ecossistema Portfólio" class="icone-projeto">
+                            <div class="textos-iniciais">
+                                <h3 class="titulo" data-i18n="titulo-portfolio-eco">Plataforma de Portfólio (Ecossistema)</h3>
+                                <p class="resumo" data-i18n="resumo-portfolio-eco">A evolução da minha plataforma de apresentação pessoal, de Vanilla JS até Next.js com TypeScript e Tailwind CSS.</p>
+                            </div>
+                        </div>
+
+                        <div class="projeto-especificacoes">
+                            <h4 data-i18n="T1-portfolio-eco">Sobre o ecossistema</h4>
+                            <p data-i18n="P1-portfolio-eco">Este projeto é o reflexo direto da minha evolução técnica. Ele é composto por três repositórios distintos que representam diferentes fases do meu desenvolvimento Front-End.</p>
+
+                            <h4 data-i18n="T2-portfolio-eco">1. Portfólio Avançado (Next.js & React) — Versão Atual</h4>
+                            <p data-i18n="P2-portfolio-eco">A versão definitiva, construída com foco absoluto em performance, SEO e componentização inteligente.</p>
+                            <ul>
+                                <li data-i18n="L1-portfolio-eco"><strong>Stack Moderna:</strong> Desenvolvido utilizando o framework Next.js, React e tipagem estática com TypeScript para maior segurança.</li>
+                                <li data-i18n="L2-portfolio-eco"><strong>Estilização e Animações:</strong> Uso intensivo de Tailwind CSS para estilização utilitária rápida e Framer Motion para orquestrar transições complexas.</li>
+                                <li data-i18n="L3-portfolio-eco"><strong>Gerenciamento Global:</strong> Implementação nativa da Context API e do useSyncExternalStore para controle de Internacionalização (i18n) e integração com next-themes para o Dark/Light Mode.</li>
+                            </ul>
+
+                            <h4 data-i18n="T3-portfolio-eco">2. Portfólio Principal (Vanilla JS)</h4>
+                            <p data-i18n="P3-portfolio-eco">A versão raiz que estabeleceu toda a identidade visual, lógica de filtros e responsividade sem a dependência de frameworks ou bibliotecas externas.</p>
+                            <ul>
+                                <li data-i18n="L4-portfolio-eco">Manipulação avançada de DOM para criação de um sistema de filtros dinâmicos de tecnologias.</li>
+                                <li data-i18n="L5-portfolio-eco">Lógica de internacionalização e alternância de temas desenvolvidas do zero com JavaScript puro e persistidas via localStorage.</li>
+                                <li data-i18n="L6-portfolio-eco">Animações desenhadas via @keyframes, englobando o loader customizado e um fundo interativo com máscara de luz guiada pelo cursor.</li>
+                            </ul>
+
+                            <h4 data-i18n="T4-portfolio-eco">3. Portfólio Base (Template Open-Source)</h4>
+                            <p data-i18n="P4-portfolio-eco">Uma refatoração da versão Vanilla criada especificamente para ser um template reutilizável para a comunidade.</p>
+                            <ul>
+                                <li data-i18n="L7-portfolio-eco">Código limpo, estruturado e pronto para que outros desenvolvedores possam clonar, customizar com seus próprios dados e implantar rapidamente um portfólio interativo de alto nível.</li>
+                            </ul>
+
+                            <div class="links">
+                                <a href="https://github.com/PedroRossZny/advanced-main-portfolio" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo-next">Versão Next.js</span>
+                                </a>
+                                <a href="https://github.com/PedroRossZny/basic-main-portfolio" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo-vanilla">Versão Vanilla</span>
+                                </a>
+                                <a href="https://github.com/PedroRossZny/basic-base-portfolio" target="_blank" class="botao-link github">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span data-i18n="github-repo-template">Template Base</span>
+                                </a>
+                            </div>
+
+                            <h4 data-i18n="T5-portfolio-eco">Tecnologias utilizadas</h4>
+                            <div class="tech-grid">
+                                <div class="tech-category">
+                                    <h5>Frontend</h5>
+                                    <ul>
+                                        <li>Next.js</li>
+                                        <li>React</li>
+                                        <li>TypeScript</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>HTML5 & CSS3</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tech-category">
+                                    <h5 data-i18n="ferramentas">Ferramentas</h5>
+                                    <ul>
+                                        <li>Git</li>
+                                        <li>GitHub</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- PAINEL CHAMADAS -->
-                    <div class="projeto" data-tech="nextjs typescript tailwindcss nestjs postgresql git github">
+                    <div class="projeto" data-tech="react nextjs typescript tailwindcss nestjs postgresql git github">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
                         </div>
@@ -239,6 +324,7 @@
                                     <h5>Frontend</h5>
                                     <ul>
                                         <li>Next.js</li>
+                                        <li>React</li>
                                         <li>TypeScript</li>
                                         <li>Tailwind CSS</li>
                                     </ul>
@@ -270,7 +356,7 @@
                     </div>
 
                     <!-- SPACEX -->
-                    <div class="projeto" data-tech="reactnative expo javascript styledcomponents git github axios ecossistemareactnative">
+                    <div class="projeto" data-tech="react reactnative expo javascript styledcomponents git github axios ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
                         </div>
@@ -325,6 +411,7 @@
                                 <div class="tech-category">
                                     <h5>Frontend</h5>
                                     <ul>
+                                        <li>React</li>
                                         <li>React Native</li>
                                         <li>Expo</li>
                                         <li>JavaScript</li>
@@ -352,7 +439,7 @@
                     </div>
 
                     <!-- SOS AMBIENTE -->
-                    <div class="projeto" data-tech="reactnative expo javascript git github ecossistemareactnative">
+                    <div class="projeto" data-tech="react reactnative expo javascript git github ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
                         </div>
@@ -400,6 +487,7 @@
                                 <div class="tech-category">
                                     <h5>Frontend</h5>
                                     <ul>
+                                        <li>React</li>
                                         <li>React Native</li>
                                         <li>Expo</li>
                                         <li>JavaScript</li>
@@ -421,7 +509,7 @@
                     </div>
 
                     <!-- SMOKE COFFEE -->
-                    <div class="projeto" data-tech="reactnative expo javascript git github ecossistemareactnative">
+                    <div class="projeto" data-tech="react reactnative expo javascript git github ecossistemareactnative">
                         <div class="projeto-controle">
                             <button class="btn-expandir" title="Expandir/Recolher"><i class="fa-solid fa-expand"></i></button>
                         </div>
@@ -475,6 +563,7 @@
                                 <div class="tech-category">
                                     <h5>Frontend</h5>
                                     <ul>
+                                        <li>React</li>
                                         <li>React Native</li>
                                         <li>Expo</li>
                                         <li>JavaScript</li>
