@@ -36,6 +36,32 @@ const translations = {
 
         "P6-laborwaze": "Para dúvidas, propostas ou qualquer tipo de contato relacionado aos projetos da iniciativa, é possível entrar em contato diretamente pelo e-mail abaixo:",
 
+        "titulo-unipass": "UniPass - Transporte com IoT",
+
+        "resumo-unipass": "Plataforma SaaS com controle de presença via RFID, integração IoT com ESP32 e 4G e monitoramento em tempo real para frotas.",
+
+        "T1-unipass": "O problema e a solução",
+
+        "P1-unipass": "O UniPass foi criado para resolver um desafio real da operação logística. A proposta foi substituir processos dispersos por uma plataforma conectada, unindo gestão, rastreamento e controle de acesso em uma experiência simples para quem vive a rotina do transporte todos os dias.",
+
+        "T2-unipass": "Funcionalidades e diferenciais",
+
+        "P2-unipass": "O sistema opera como uma plataforma SaaS com arquitetura multiempresa (multi-tenant), reunindo em um só ecossistema:",
+
+        "L1-unipass": "<strong>Gestão Centralizada:</strong> Dashboard web para administrar alunos, veículos, usuários e dispositivos de forma organizada.",
+
+        "L2-unipass": "<strong>Integração IoT:</strong> Comunicação com dispositivos ESP32 via conectividade 4G para telemetria, localização e leitura de tags RFID.",
+
+        "L3-unipass": "<strong>Controle de Embarque:</strong> Validação automática da capacidade do veículo e registro de presença dos passageiros em tempo real.",
+
+        "L4-unipass": "<strong>Resiliência Offline-First:</strong> Operação preparada para áreas de sombra, com sincronização automática quando a conexão é restabelecida.",
+
+        "T3-unipass": "Visão técnica e próximos passos",
+
+        "P3-unipass": "Mais do que desenvolver telas, o foco foi estruturar um produto com visão de operação, confiabilidade e escala. O projeto utiliza Next.js no frontend, NestJS no backend e PostgreSQL com Prisma na camada de dados, criando uma base sólida para a próxima etapa: expandir a experiência com um aplicativo mobile.",
+
+        "T4-unipass": "Tecnologias utilizadas",
+
         "titulo-painel": "Painel de Chamadas",
 
         "resumo-painel": "Sistema full-stack desenvolvido para otimizar o fluxo de atendimento em hospitais.",
@@ -75,6 +101,8 @@ const translations = {
         "P11-painel": "O Painel de Chamadas foi desenvolvido utilizando uma arquitetura full-stack moderna, voltada para desempenho, organização de código e facilidade de manutenção. O sistema combina tecnologias de frontend, backend, banco de dados e controle de versão para garantir estabilidade e escalabilidade.",
 
         "banco-de-dados": "Banco de Dados",
+
+        "iot-dispositivos": "IoT & Dispositivos",
 
         "ferramentas": "Ferramentas",
 
@@ -588,6 +616,32 @@ const translations = {
 
         "P6-laborwaze": "For questions, proposals, or any type of contact related to the initiative's projects, you can get in touch directly through the email below:",
 
+        "titulo-unipass": "UniPass - IoT Transport Platform",
+
+        "resumo-unipass": "SaaS platform with RFID attendance control, IoT integration via ESP32 and 4G, and real-time fleet monitoring.",
+
+        "T1-unipass": "The problem and the solution",
+
+        "P1-unipass": "UniPass was created to solve a real logistics operations challenge. The goal was to replace scattered processes with a connected platform that brings management, tracking, and access control together in a simple experience for people who deal with transport routines every day.",
+
+        "T2-unipass": "Features and differentiators",
+
+        "P2-unipass": "The system operates as a SaaS platform with a multi-company (multi-tenant) architecture, bringing together a complete ecosystem:",
+
+        "L1-unipass": "<strong>Centralized Management:</strong> Web dashboard to manage students, vehicles, users, and devices in an organized way.",
+
+        "L2-unipass": "<strong>IoT Integration:</strong> Communication with ESP32 devices over 4G connectivity for telemetry, location tracking, and RFID tag reading.",
+
+        "L3-unipass": "<strong>Boarding Control:</strong> Automatic vehicle capacity validation and real-time passenger attendance logging.",
+
+        "L4-unipass": "<strong>Offline-First Resilience:</strong> Built for low-coverage areas, with automatic sync once the connection is restored.",
+
+        "T3-unipass": "Technical overview and next steps",
+
+        "P3-unipass": "More than building screens, the focus was to structure a product with operations, reliability, and scale in mind. The project uses Next.js on the frontend, NestJS on the backend, and PostgreSQL with Prisma in the data layer, creating a solid foundation for the next step: expanding the experience with a mobile app.",
+
+        "T4-unipass": "Technologies used",
+
         "titulo-painel": "Call Panel",
 
         "resumo-painel": "Full-stack system developed to optimize the service flow in hospitals.",
@@ -627,6 +681,8 @@ const translations = {
         "P11-painel": "The Call Panel was developed using a modern full-stack architecture focused on performance, code organization, and ease of maintenance. The system combines frontend, backend, database, and version control technologies to ensure stability and scalability.",
 
         "banco-de-dados": "Databases",
+
+        "iot-dispositivos": "IoT & Devices",
 
         "ferramentas": "Tools",
 

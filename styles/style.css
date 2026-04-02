@@ -636,6 +636,10 @@ article#projetos h2 {
     margin: 20px 0;
 }
 
+.tech-grid--fill-last-row .tech-category:last-child {
+    grid-column: 1 / -1;
+}
+
 .tech-category {
     background: rgba(255,255,255,0.04);
     padding: 12px;
